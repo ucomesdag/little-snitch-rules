@@ -1,0 +1,25 @@
+{
+  "name" : "Fritzing",
+  "description" : "Rules for Fritzing - Fritzing is an Electronic Design Automation software for designers, artists and just anyone who has interest in physical computing and prototyping.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Fritzing.app/Contents/MacOS/Fritzing",
+      "remote-domains" : [
+        "fritzing.org"
+      ],
+      "ports" : "80",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Fritzing.app/Contents/MacOS/Fritzing",
+      "remote-domains" : [
+        "fritzing.org",
+        "pages.dev"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name" : "Steam",
+  "description" : "Rules for Steam - Steam is the ultimate destination for playing, discussing, and creating games.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Steam.app",
+      "remote-domains" : [
+        "steamcdn-a.akamaihd.net",
+        "steampowered.com",
+        "steamstatic.com"
+      ],
+      "ports" : "80",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Steam.app",
+      "remote-domains" : [
+        "akamaihd.net",
+        "amazonaws.com",
+        "googleapis.com",
+        "steamcommunity.com",
+        "steamcontent.com",
+        "steampowered.com",
+        "steamstatic.com",
+        "windows.net"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Steam.app",
+      "remote-domains" : "steamserver.net"
+    }
+  ]
+}

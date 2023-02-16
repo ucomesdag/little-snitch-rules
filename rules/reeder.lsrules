@@ -1,0 +1,27 @@
+{
+  "name": "Reeder",
+  "description": "Rules for Reeder - Keep control of your news reading with Reeder.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Reeder.app/Contents/MacOS/Reeder",
+      "remote": "any",
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Reeder.app/Contents/MacOS/Reeder",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Reeder.app/Contents/MacOS/Reeder",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "udp"
+    }
+  ]
+}

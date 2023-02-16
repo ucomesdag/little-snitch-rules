@@ -1,0 +1,20 @@
+{
+  "name": "MacUpdater",
+  "description": "Rule for MacUpdater - keep all your apps up-to-date effortlessly.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/MacUpdater.app/Contents/MacOS/MacUpdater",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/MacUpdater.app/Contents/MacOS/MacUpdater",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "udp"
+    }
+  ]
+}

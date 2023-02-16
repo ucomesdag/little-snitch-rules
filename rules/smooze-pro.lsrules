@@ -1,0 +1,28 @@
+{
+  "name": "Smooze Pro",
+  "description": "Rules for Smooze Pro - Smooth scrolling & Mouse enhancement app for your Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Smooze Pro.app/Contents/MacOS/Smooze Pro",
+      "remote-domains": [
+        "appcenter.ms",
+        "paddle.com",
+        "paddleapi.com",
+        "s3.amazonaws.com",
+        "smooze.co"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Smooze Pro.app/Contents/MacOS/Smooze Pro",
+      "remote-domains" : [
+        "smooze.co"
+      ],
+      "ports" : "443",
+      "protocol" : "udp"
+    }
+  ]
+}

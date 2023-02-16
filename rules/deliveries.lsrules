@@ -1,0 +1,55 @@
+{
+  "name": "Deliveries",
+  "description": "Rules for Deliveries a package tracker for iPhone, iPad, Apple Watch, and Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Deliveries.app/Contents/MacOS/Deliveries",
+      "remote-domains": [
+        "amazon.com",
+        "amazon.de",
+        "amazon.nl",
+        "deliveries.app",
+        "dpd.de",
+        "gls-group.eu",
+        "junecloud.com",
+        "media-amazon.com",
+        "postnl.nl",
+        "siege-amazon.com",
+        "ssl-images-amazon.com",
+        "ups.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Deliveries.app/Contents/PlugIns/Deliveries Widget.appex/Contents/MacOS/Deliveries Widget",
+      "remote-domains": [
+        "amazon.com",
+        "amazon.de",
+        "amazon.nl",
+        "deliveries.app",
+        "dpd.de",
+        "gls-group.eu",
+        "junecloud.com",
+        "media-amazon.com",
+        "postnl.nl",
+        "siege-amazon.com",
+        "ssl-images-amazon.com",
+        "ups.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Deliveries.app/Contents/Library/LoginItems/Deliveries Express.app/Contents/MacOS/Deliveries Express",
+      "remote-domains": [
+        "junecloud.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

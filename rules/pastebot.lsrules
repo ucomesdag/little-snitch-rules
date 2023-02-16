@@ -1,0 +1,15 @@
+{
+  "name": "Pastebot",
+  "description": "Rules for Pastebot - Pastebot saves everything you copy so that you can quickly recall them in the future.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Pastebot.app/Contents/MacOS/Pastebot",
+      "remote-domains": [
+        "tapbots.net"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

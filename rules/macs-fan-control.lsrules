@@ -1,0 +1,15 @@
+{
+  "name": "Macs Fan Control",
+  "description": "Rules for Macs Fan Control - Monitor and control fans on Apple computers",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Macs Fan Control.app/Contents/MacOS/Macs Fan Control",
+      "remote-domains": [
+        "crystalidea.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

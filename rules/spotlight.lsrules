@@ -1,0 +1,15 @@
+{
+  "description": "Apple Spotlight",
+  "name": "Rules for Apple Spotlight",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight",
+      "remote-domains": [
+        "yahoo.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

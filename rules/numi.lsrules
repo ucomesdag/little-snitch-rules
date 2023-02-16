@@ -1,0 +1,37 @@
+{
+  "name": "numi",
+  "description": "Rules for Numi - Beautiful calculator app for Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Numi.app/Contents/MacOS/Numi",
+      "remote-domains": [
+        "numi.app",
+        "digitaloceanspaces.com",
+        "paddle.com",
+        "paddleapi.com",
+        "sentry.io"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Numi.app/Contents/MacOS/Numi",
+      "remote-domains": [
+        "sentry.io"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "deny",
+      "process": "/Users/uco/Applications/Numi.app/Contents/MacOS/Numi",
+      "remote-domains": [
+        "sentry.io"
+      ],
+      "ports": "443",
+      "protocol": "any"
+    }
+  ]
+}

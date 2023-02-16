@@ -1,0 +1,21 @@
+{
+  "name" : "RapidAPI",
+  "description" : "Rules for RapidAPI - RapidAPI Client is an API developer tool with an intuitive UI that simplifies your API and interacts with HTTP APIs.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/RapidAPI.app/Contents/MacOS/RapidAPI",
+      "remote-domains" : [
+        "firebaseio.com",
+        "github.com",
+        "githubusercontent.com",
+        "googleapis.com",
+        "list-manage.com",
+        "paw.cloud",
+        "sentry.io"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    }
+  ]
+}

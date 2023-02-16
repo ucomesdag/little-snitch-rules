@@ -1,0 +1,63 @@
+{
+  "name": "xSearch",
+  "description": "Rules for xSearch, the all-in-one search tool.",
+  "rules": [
+    {
+      "action" : "deny",
+      "process" : "/Applications/xSearch.app/Contents/MacOS/xSearch",
+      "remote-domains" : [
+        "gstatic.com"
+      ],
+      "protocol" : "tcp",
+      "ports" : "443"
+    },
+    {
+      "action" : "deny",
+      "process" : "/Applications/xSearch.app/Contents/MacOS/xSearch",
+      "remote-domains" : [
+        "google.com"
+      ],
+      "protocol" : "udp",
+      "ports" : "443"
+
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/xSearch.app/Contents/MacOS/xSearch",
+      "remote-domains": [
+        "1password.com",
+        "amazon.cn",
+        "amazon.com",
+        "amazon.nl",
+        "ask.com",
+        "bing.com",
+        "bitchute.com",
+        "bittube.tv",
+        "duckduckgo.com",
+        "ecosia.org",
+        "ekoru.org",
+        "epicgames.com",
+        "fanfiction.net",
+        "flickr.com",
+        "google.com",
+        "indeed.com",
+        "instagram.com",
+        "kavin.rocks",
+        "nature.com",
+        "onesearch.com",
+        "peteyvid.com",
+        "qrcode.show",
+        "techradar.com",
+        "tumblr.com",
+        "twitter.com",
+        "videoshub.com",
+        "whaleslide.com",
+        "wikipedia.org",
+        "you.com",
+        "youtube.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

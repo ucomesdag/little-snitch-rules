@@ -1,0 +1,22 @@
+{
+  "name" : "Python",
+  "description" : "Rules for Python - Python is a high-level, general-purpose programming language.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/usr/local/Cellar/python@3.11/3.11.4_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+      "remote-domains" : [
+        "me.com"
+      ],
+      "ports" : "993",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app",
+      "remote" : "any",
+      "ports" : "993",
+      "protocol" : "tcp"
+    }
+  ]
+}

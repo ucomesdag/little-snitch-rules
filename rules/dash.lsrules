@@ -1,0 +1,107 @@
+{
+  "name": "Dash",
+  "description": "Rules for Dash - Dash an API Documentation Browser and Code Snippet Manager.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": [
+        "appcenter.ms",
+        "appveyor.com",
+        "awesome.re",
+        "azure.com",
+        "badgen.net",
+        "beerpay.io",
+        "circleci.com",
+        "cljdoc.org",
+        "codeclimate.com",
+        "codecov.io",
+        "cookielaw.org",
+        "coveralls.io",
+        "dartlang.org",
+        "docker.com",
+        "drone.io",
+        "fossa.com",
+        "fossa.io",
+        "github.com",
+        "github.io",
+        "githubusercontent.com",
+        "gitter.im",
+        "go-search.org",
+        "go.dev",
+        "godoc.org",
+        "google.com",
+        "googleapis.com",
+        "goreportcard.com",
+        "goswagger.io",
+        "haskell.org",
+        "hex.pm",
+        "imgur.com",
+        "jsdelivr.net",
+        "kapeli.com",
+        "liberapay.com",
+        "maven.org",
+        "msecnd.net",
+        "onetrust.com",
+        "opencollective.com",
+        "packagist.org",
+        "rawgit.com",
+        "repl.it",
+        "replit.com",
+        "rubygems.org",
+        "s3.amazonaws.com",
+        "shields.io",
+        "shields.io",
+        "sourcegraph.com",
+        "sourcerer.io",
+        "sstatic.net",
+        "stackoverflow.com",
+        "travis-ci.com",
+        "travis-ci.org",
+        "twimg.com",
+        "vt100.net",
+        "wercker.com",
+        "wikimedia.org",
+        "www.drone.io"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": [
+        "github.io",
+        "gitter.im",
+        "go-search.org",
+        "godoc.org",
+        "imgur.com",
+        "jsoniter.com",
+        "maven.org",
+        "shields.io",
+        "vt100.net"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Dash.app/Contents/MacOS/Dash",
+      "remote-domains" : [
+        "shields.io",
+        "google.com"
+      ],
+      "ports" : "443",
+      "protocol" : "udp"
+    },
+    {
+      "action" : "deny",
+      "process" : "/Users/uco/Applications/Brew/Dash.app/Contents/MacOS/Dash",
+      "remote-domains" : [
+        "gstatic.com"
+      ],
+      "ports" : "443",
+      "protocol" : "any"
+    }
+  ]
+}

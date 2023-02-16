@@ -1,0 +1,15 @@
+{
+  "name": "AppCleaner",
+  "description": "Rules for AppCleaner - AppCleaner a small application which allows you to thoroughly uninstall unwanted apps.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/AppCleaner.app/Contents/MacOS/AppCleaner",
+      "remote-domains": [
+        "freemacsoft.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

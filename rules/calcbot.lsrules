@@ -1,0 +1,15 @@
+{
+  "name": "Calcbot",
+  "description": "Rules for Calcbot an intelligent calculator and unit converter for the rest of us",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Calcbot.app/Contents/MacOS/Calcbot",
+      "remote-domains": [
+        "tapbots.net"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

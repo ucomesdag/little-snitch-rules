@@ -1,0 +1,19 @@
+{
+  "name": "Microsoft Excel",
+  "description": "Rules for Microsoft Excel - Spreadsheets.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft Excel.app/Contents/MacOS/Microsoft Excel",
+      "remote-domains": [
+        "azurewebsites.net",
+        "live.com",
+        "microsoft.com",
+        "office.com",
+        "office.net"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

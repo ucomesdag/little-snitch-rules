@@ -1,0 +1,21 @@
+{
+  "name": "Microsoft PowerPoint",
+  "description": "Rules for Microsoft PowerPoint - Presentations",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft PowerPoint.app/Contents/MacOS/Microsoft PowerPoint",
+      "remote-domains": [
+        "azurewebsites.net",
+        "live.com",
+        "microsoft.com",
+        "msftauth.net",
+        "office.com",
+        "office.net",
+        "microsoftonline.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

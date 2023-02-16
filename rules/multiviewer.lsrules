@@ -1,0 +1,57 @@
+{
+  "name": "MultiViewer for F1",
+  "description": "Rules for MultiViewer for F1 - Experience F1TV® like never before.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote-domains": [
+        "akamaized.net",
+        "contentdirect.tv",
+        "f1mv.com",
+        "formula1.com",
+        "googleapis.com",
+        "multiviewer.app"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote-domains": [
+        "formula1.com",
+        "eu-west-2.amazonaws.com",
+        "edigitalsurvey.com",
+        "engage.app",
+        "evgnet.com",
+        "multiviewer.dev",
+        "paypal.com",
+        "redditstatic.com",
+        "talkative-cdn.com",
+        "trustarc.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote": "any",
+      "ports": "any",
+      "protocol": "udp"
+    },
+    {
+      "action": "deny",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote-domains": [
+        "facebook.com",
+        "facebook.net",
+        "googletagmanager.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

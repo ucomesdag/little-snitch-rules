@@ -1,0 +1,15 @@
+{
+  "name": "image-optim",
+  "description": "Rules for ImageOptim - Removes bloated metadata. Saves disk space & bandwidth by compressing images without losing quality.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/ImageOptim.app/Contents/MacOS/ImageOptim",
+      "remote-domains": [
+        "imageoptim.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

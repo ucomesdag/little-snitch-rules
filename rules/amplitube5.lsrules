@@ -1,0 +1,20 @@
+{
+  "name" : "AmpliTube 5",
+  "description" : "Rules for AmpliTube 5 - Amp simulation and guitar gear modeling software.",
+  "rules" : [
+    {
+      "action" : "deny",
+      "process" : "/Applications/AmpliTube 5.app/Contents/MacOS/AmpliTube 5",
+      "remote-domains" : "google.com",
+      "protocol" : "tcp",
+      "ports" : "443"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/AmpliTube 5.app/Contents/MacOS/AmpliTube 5",
+      "remote-domains" : "ikmultimedia.com",
+      "protocol" : "tcp",
+      "ports" : "443"
+    }
+  ]
+}

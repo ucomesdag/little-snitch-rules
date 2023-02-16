@@ -1,0 +1,20 @@
+{
+  "name" : "App Store",
+  "description" : "Rules for the App Store is a safe and trusted place to find over 1.8 million apps for your Apple devices.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/System/Applications/App Store.app/Contents/MacOS/App Store",
+      "remote" :"any",
+      "protocol" : "tcp",
+      "ports" : "443"
+    },
+    {
+      "action" : "allow",
+      "process" : "/System/Applications/App Store.app/Contents/MacOS/App Store",
+      "remote-domains" : "cloudflare.com",
+      "protocol" : "udp",
+      "ports" : "443"
+    }
+  ]
+}

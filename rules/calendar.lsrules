@@ -1,0 +1,15 @@
+{
+  "name": "Apple Calendar",
+  "description": "Rules for Apple Calendar",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/System/Applications/Calendar.app/Contents/MacOS/Calendar",
+      "remote-domains": [
+        "weather.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

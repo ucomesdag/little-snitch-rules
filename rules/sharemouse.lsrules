@@ -1,0 +1,39 @@
+{
+  "name" : "ShareMouse",
+  "description" : "Rules for ShareMouse - ShareMouse lets you control multiple computers from a single mouse and keyboard over the local LAN. ",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/ShareMouse.app/Contents/MacOS/ShareMouse",
+      "remote-domains" : [
+        "bartelsmedia.com",
+        "sharemouse.com"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/ShareMouse.app/Contents/MacOS/ShareMouse",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "1046",
+      "process" : "/Users/uco/Applications/Brew/ShareMouse.app",
+      "protocol" : "udp",
+      "remote-addresses" : "255.255.255.255"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/ShareMouse.app",
+      "remote-domains" : [
+        "bartelsmedia.com",
+        "sharemouse.com"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    }
+  ]
+}

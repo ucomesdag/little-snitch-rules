@@ -1,0 +1,36 @@
+{
+  "name": "Ivory for Mastodon",
+  "description": "Rules for Ivory for Mastodon by Tapbots",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Ivory.app/Contents/MacOS/Ivory",
+      "remote-domains" : [
+        "mastodon.social",
+        "fosstodon.org"
+      ],
+      "ports": "443",
+      "protocol": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Ivory.app/Contents/PlugIns/Notification Service Extension.appex/Contents/MacOS/Notification Service Extension",
+      "remote-domains" : [
+        "mastodon.social",
+        "fosstodon.org"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter",
+      "remote-domains" : [
+        "mastodon.social",
+        "fosstodon.org"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Calibre",
+  "description": "Rules for Calibre - The one stop solution for all your e-book needs. Comprehensive e-book software..",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/calibre.app/Contents/MacOS/calibre",
+      "remote-domains": [
+        "calibre-ebook.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Signal",
+  "description": "Rules for Signal - Say \"hello\" to a different messaging experience.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Signal.app/Contents/MacOS/Signal",
+      "remote-domains": [
+        "signal.org"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Signal.app/Contents/MacOS/Signal",
+      "remote-domains": [
+        "signal.org"
+      ],
+      "ports" : "3478",
+      "protocol" : "udp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Signal.app/Contents/MacOS/Signal",
+      "remote-addresses" : [
+        "1.1.1.1"
+      ],
+      "ports" : "53",
+      "protocol" : "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Signal.app/Contents/MacOS/Signal",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Signal.app/Contents/MacOS/Signal",
+      "remote": "any",
+      "ports": "any",
+      "protocol": "udp"
+    }
+  ]
+}

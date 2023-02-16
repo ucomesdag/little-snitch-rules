@@ -1,0 +1,96 @@
+{
+  "name": "Safari",
+  "description": "Rules for Safari - Safari is the best way to experience the internet on all your Apple devices. ",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+      "remote": "any",
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/Versions/A/com.apple.Safari.SafeBrowsing.Service",
+      "remote-domains": [
+        "safebrowsing.apple"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/Versions/A/com.apple.Safari.SafeBrowsing.Service",
+      "remote-domains": [
+        "safebrowsing.apple"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+      "remote-domains": [
+        "stun.l.google.com"
+      ],
+      "ports": "19302",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+      "remote": "any",
+      "ports": "53,123,19302",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "80,443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "53",
+      "protocol": "udo"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/kubectl/osx/kubectl"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "via": "/Users/uco/.vs-kubernetes/tools/kubectl/kubectl"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/Safari.app/Contents/MacOS/Safari",
+      "ports": "443",
+      "protocol": "udp",
+      "remote-domains": "googletagmanager.com"
+    }
+  ]
+}

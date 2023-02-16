@@ -1,0 +1,25 @@
+{
+  "name": "AdGuard",
+  "description": "Rules for AdGuard - AdGuard the World's most advanced adblocker!",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Adguard.app/Contents/MacOS/Adguard",
+      "ports": "53",
+      "protocol": "udp",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Adguard.app/Contents/MacOS/Adguard",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Adguard.app/Contents/MacOS/Adguard",
+      "remote": "any"
+    }
+  ]
+}

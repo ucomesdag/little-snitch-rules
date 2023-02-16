@@ -1,0 +1,27 @@
+{
+  "name" : "CodeReady Containers",
+  "description" : "Rules for CodeReady Containers - Minimal local OpenShift environments for development and testing purposes.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "/usr/local/crc/crc",
+      "protocol" : "tcp",
+      "remote-domains" : "quay.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "/usr/local/crc/crc",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "123",
+      "process" : "/usr/local/crc/crc",
+      "protocol" : "udp",
+      "remote" : "any"
+    }
+  ]
+}

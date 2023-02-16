@@ -1,0 +1,11 @@
+{
+  "description" : "",
+  "name" : "vmware_",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/VMware Fusion.app/Contents/MacOS/VMware Fusion",
+      "remote" : "any"
+    }
+  ]
+}

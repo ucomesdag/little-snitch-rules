@@ -1,0 +1,20 @@
+{
+  "name": "VMware Fusion",
+  "description": "Rules for VMware Fusion - Desktop Hypervisors for Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/VMware Fusion.app/Contents/MacOS/VMware Fusion",
+      "protocol": "any",
+      "ports": "any",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/VMware/VMware Fusion/Services/Contents/Library/vmnet-natd",
+      "protocol": "any",
+      "ports": "any",
+      "remote": "any"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "podman-desktop",
+  "description": "Rules for Podman Desktop - Podman Desktop an open source graphical tool enabling you to seamlessly work with containers and Kubernetes from your local environment.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Podman Desktop.app/Contents/MacOS/Podman Desktop",
+      "remote-domains": [
+        "github.com",
+        "githubusercontent.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "any",
+      "remote": "any",
+      "via": "/usr/local/Cellar/podman/4.4.2/libexec/podman/gvproxy"
+    }
+  ]
+}
