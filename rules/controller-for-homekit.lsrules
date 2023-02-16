@@ -1,0 +1,28 @@
+{
+  "name": "controller-for-homekit",
+  "description": "Rules for Controller for HomeKit - Next Level Apple Home experience!",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/ControllerForHomeKit.app/Contents/MacOS/ControllerForHomeKit",
+      "remote-domains": [
+        "controllerforhomekit.com",
+        "eu-central-1.amazonaws.com",
+        "mixpanel.com",
+        "onesignal.com",
+        "revenuecat.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/ControllerForHomeKit.app/Contents/MacOS/ControllerForHomeKit",
+      "remote-domains": [
+        "onesignal.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    }
+  ]
+}

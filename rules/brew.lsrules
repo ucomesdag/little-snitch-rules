@@ -1,0 +1,34 @@
+{
+  "name": "Brew",
+  "description": "Rules for Homebrew - The Missing Package Manager for macOS.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "script./usr/local/Homebrew/Library/Homebrew/brew.sh",
+      "remote-domains": [
+        "github.com",
+        "brew.sh"
+      ],
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/usr/bin/curl"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/bin/curl",
+      "remote-domains": [
+        "brew.sh"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "script./usr/local/Homebrew/Library/Homebrew/brew.sh",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "remote-domains" : "github.com",
+      "via" : "/usr/local/Cellar/git/2.41.0_2/libexec/git-core/git-remote-http"
+    }
+  ]
+}

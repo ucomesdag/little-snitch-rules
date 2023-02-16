@@ -1,0 +1,81 @@
+{
+  "name" : "Arq",
+  "description" : "Rules for Arq - Cloud backup software for Mac and Windows.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/Arq.app/Contents/MacOS/Arq",
+      "remote-domains" : [
+        "live.com",
+        "microsoft.com",
+        "microsoftonline.com",
+        "msftauth.net"
+      ],
+      "protocol" : "tcp",
+      "ports" : "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains": [
+        "1drv.com",
+        "amazonaws.com",
+        "arqbackup.com",
+        "backblaze.com",
+        "backblazeb2.com",
+        "microsoft.com",
+        "microsoftonline.com",
+        "onedrive.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains": [
+        "github.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains": [
+        "github.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/usr/local/Cellar/git-lfs/3.4.0/bin/git-lfs"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains": [
+        "github.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/usr/local/Cellar/git/2.41.0_2/libexec/git-core/git-remote-http"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains": [
+        "dropboxapi.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains" : [
+        "me.com"
+      ],
+      "protocol" : "tcp",
+      "ports" : "587"
+    }
+  ]
+}

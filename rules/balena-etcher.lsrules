@@ -1,0 +1,46 @@
+{
+  "name": "balena-etcher",
+  "description": "Rules for BalenaEtcher - Flash OS images to SD cards & USB drives.",
+  "rules": [
+    {
+      "action": "deny",
+      "direction": "incoming",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote-domains": [
+        "balena.io",
+        "balena-cloud.com",
+        "sentry.io",
+        "github.com",
+        "githubusercontent.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote-domains": [
+        "balena.io",
+        "balena-cloud.com",
+        "googleapis.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote-domains": [
+        "sentry.io",
+        "gstatic.com"
+      ],
+      "ports": "443",
+      "protocol": "any"
+    }
+  ]
+}

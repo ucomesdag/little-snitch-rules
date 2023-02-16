@@ -1,0 +1,13 @@
+{
+  "name" : "Transmission",
+  "description" : "Rules for Transmission - A Fast, Easy and Free Bittorrent Client.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/Transmission.app/Contents/MacOS/Transmission",
+      "remote" : "any",
+      "ports" : "1900",
+      "protocol" : "udp"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "exr",
+  "description": "Rules for EXR - Elevate your indoor rowing experience.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/EXR.app/Contents/MacOS/EXR",
+      "remote-domains": [
+        "exrgame.com",
+        "unity3d.com",
+        "sentry.io"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/EXR.app/Contents/MacOS/EXR",
+      "ports": "10001",
+      "protocol": "tcp",
+      "remote": "any"
+    }
+  ]
+}

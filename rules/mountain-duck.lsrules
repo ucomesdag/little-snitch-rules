@@ -1,0 +1,25 @@
+{
+  "name": "Mountain Duck",
+  "description": "Rules for Mountain Duck - Mountain Duck lets you mount server and cloud storage as a disk on your desktop.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Mountain Duck.app/Contents/MacOS/Mountain Duck",
+      "remote-domains": [
+        "1drv.com",
+        "cloudfront.net",
+        "cyberduck.io",
+        "dropboxapi.com",
+        "eu-central-1.amazonaws.com",
+        "microsoft.com",
+        "microsoftonline.com",
+        "mountainduck.io",
+        "s3.amazonaws.com",
+        "l-dc-msedge.net",
+        "l-msedge.net"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ia-writer",
+  "description": "Rules for iA Writer - The Benchmark of Markdown Writing Apps.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iA Writer.app/Contents/MacOS/iA Writer",
+      "remote-domains": [
+        "ia.net",
+        "cloudflare.com",
+        "kxcdn.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

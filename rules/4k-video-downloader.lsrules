@@ -1,0 +1,29 @@
+{
+  "name" : "4K Video Downloader",
+  "description" : "Rules for 4K Video Downloader - Download videos from all popular websites including YouTube, Vimeo, TikTok, SoundCloud, Facebook, Twitch, Bilibili and more in high-quality",
+  "rules" : [
+    {
+      "action" : "deny",
+      "process" : "/Applications/4K Video Downloader.app/Contents/MacOS/4kvideodownloader",
+      "remote-domains" : [
+        "gstatic.com",
+        "google.com"
+      ],
+      "protocol" : "tcp",
+      "ports" : "443"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/4K Video Downloader.app/Contents/MacOS/4kvideodownloader",
+      "remote-domains" : [
+        "4kdownload.com",
+        "googlevideo.com",
+        "openmedia.co",
+        "youtube.com",
+        "ytimg.com"
+      ],
+      "protocol" : "tcp",
+      "ports" : "443"
+    }
+  ]
+}

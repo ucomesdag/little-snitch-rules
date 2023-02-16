@@ -1,0 +1,20 @@
+{
+  "name": "Microsoft Word",
+  "description": "Rules for Microsoft Word - Word processing.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft Word.app/Contents/MacOS/Microsoft Word",
+      "remote-domains": [
+        "live.com",
+        "microsoft.com",
+        "office.com",
+        "office.net",
+        "azurewebsites.net",
+        "microsoftonline.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

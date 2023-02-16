@@ -1,0 +1,84 @@
+{
+  "name": "VIA",
+  "description": "Rules for VIA - Your keyboard's best friend Simple Plug in your keyboard.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/VIA.app/Contents/MacOS/VIA",
+      "remote-domains": [
+        "usevia.app",
+        "cloudapp.net",
+        "googleapis.com",
+        "gstatic.com",
+        "sentry.io",
+        "usevia.app",
+        "github.com",
+        "visualstudio.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/VIA.app/Contents/MacOS/VIA",
+      "remote-domains": [
+        "usevia.app",
+        "googleapis.com",
+        "gstatic.com",
+        "sentry.io",
+        "usevia.app"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/VIA.app/Contents/MacOS/VIA",
+      "remote": "any",
+      "ports": "53",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Applications/VIA.app/Contents/MacOS/VIA",
+      "remote": "any",
+      "ports": "50000-66000",
+      "protocol": "udp",
+      "via": "/Applications/VIA.app/Contents/Frameworks/VIA Helper.app/Contents/MacOS/VIA Helper"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/VIA.app/Contents/MacOS/VIA",
+      "remote-domains" : [
+        "googleapis.com",
+        "sentry.io",
+        "usevia.app",
+        "visualstudio.com",
+        "sentry.io",
+        "usevia.app"
+      ],
+      "protocol" : "tcp",
+      "ports" : "443",
+      "via" : "/Applications/VIA.app/Contents/Frameworks/VIA Helper.app/Contents/MacOS/VIA Helper"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/VIA.app/Contents/MacOS/VIA",
+      "remote" : "any",
+      "protocol" : "any",
+      "ports" : "53",
+      "via" : "/Applications/VIA.app/Contents/Frameworks/VIA Helper.app/Contents/MacOS/VIA Helper"
+    },
+    {
+      "action" : "deny",
+      "process" : "/Applications/VIA.app/Contents/MacOS/VIA",
+      "protocol" : "tcp",
+      "ports" : "443",
+      "remote-domains" : [
+        "gstatic.com"
+      ],
+      "via" : "/Applications/VIA.app/Contents/Frameworks/VIA Helper.app/Contents/MacOS/VIA Helper"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Apple Music",
+  "description": "Rules for Apple Music",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/System/Applications/Music.app/Contents/MacOS/Music",
+      "remote-domains": [
+        "cddbp.net"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Applications/Music.app/Contents/MacOS/Music",
+      "remote-domains": [
+        "applemusic.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

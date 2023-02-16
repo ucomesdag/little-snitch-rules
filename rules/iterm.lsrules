@@ -1,0 +1,33 @@
+{
+  "name": "iTerm2",
+  "description": "Rules for iTerm2 - macOS Terminal Replacement.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "any",
+      "via" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
+    },
+    {
+      "action" : "allow",
+      "process" : "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http",
+      "remote-domains" : "any",
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "process" : "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote" : "local-net"
+    }
+  ]
+}

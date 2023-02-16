@@ -1,0 +1,63 @@
+{
+  "name" : "Electrum",
+  "description" : "Rules for Electrum - Electrum is a fast, secure and easy-to-use Bitcoin wallet that supports various platforms and add-ons.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/Electrum.app/Contents/MacOS/run_electrum",
+      "remote-domains" : [
+        "blockstream.info"
+      ],
+      "ports" : "700",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Electrum.app/Contents/MacOS/run_electrum",
+      "remote-domains" : [
+        "c3-soft.com"
+      ],
+      "ports" : "57002",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Electrum.app/Contents/MacOS/run_electrum",
+      "remote-domains" : [
+        "grey.pw"
+      ],
+      "ports" : "51002",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Electrum.app/Contents/MacOS/run_electrum",
+      "remote-domains" : [
+        "jochen-hoenicke.de"
+      ],
+      "ports" : "50006",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Electrum.app/Contents/MacOS/run_electrum",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Electrum.app/Contents/MacOS/run_electrum",
+      "remote" : "any",
+      "ports" : "50002-50006",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Electrum.app/Contents/MacOS/run_electrum",
+      "remote" : "any",
+      "ports" : "56002",
+      "protocol" : "tcp"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "WireGuard",
+  "description": "Rules for WireGuard a fast, modern, secure VPN tunnel.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/WireGuard.app/Contents/PlugIns/WireGuardNetworkExtension.appex/Contents/MacOS/WireGuardNetworkExtension",
+      "remote": "any"
+    }
+  ]
+}

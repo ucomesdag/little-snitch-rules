@@ -1,0 +1,16 @@
+{
+  "name": "Kaleidoscope",
+  "description": "Rules for Kaleidoscope for Mac - Spot the differences, merge in seconds.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Kaleidoscope.app/Contents/MacOS/Kaleidoscope",
+      "remote-domains": [
+        "appcenter.ms",
+        "kaleidoscope.app"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

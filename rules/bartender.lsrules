@@ -1,0 +1,24 @@
+{
+  "name": "Bartender",
+  "description": "Rules for Bartender - Take control of your menu bar.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Bartender 4.app/Contents/MacOS/Bartender 4",
+      "remote-domains": [
+        "macbartender.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Bartender 4.app/Contents/MacOS/Bartender 4",
+      "remote-domains": [
+        "macbartender.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    }
+  ]
+}

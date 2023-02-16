@@ -1,0 +1,20 @@
+{
+  "name": "ForkLift",
+  "description": "ForkLift - most advanced file manager and FTP client for macOS.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/ForkLift.app/Contents/MacOS/ForkLift",
+      "remote": "any",
+      "ports": "20,21,80,111,137-139,443,445,548,990,998,2049,5800-5810,5900-5910,14254",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/ForkLift.app/Contents/MacOS/ForkLift",
+      "remote": "any",
+      "ports": "111,2049",
+      "protocol": "udp"
+    }
+  ]
+}

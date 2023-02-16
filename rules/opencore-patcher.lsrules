@@ -1,0 +1,19 @@
+{
+  "name": "opencore-patcher",
+  "description": "Rules for OpenCore Legacy Patcher - A Python-based project revolving around Acidanthera's OpenCorePkg and Lilu for both running and unlocking features in macOS on supported and unsupported Macs.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/Dortania/OpenCore-Patcher.app/Contents/MacOS/OpenCore-Patcher",
+      "remote-domains": [
+        "appledb.dev",
+        "dhinak.net",
+        "github.com",
+        "githubusercontent.com",
+        "google.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

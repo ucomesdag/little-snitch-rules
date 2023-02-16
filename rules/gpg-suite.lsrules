@@ -1,0 +1,26 @@
+{
+  "name": "GPG Suite",
+  "description": "Rules for GPG Suite - Use GPG Suite to encrypt, decrypt, sign and verify files or messages.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/GPG Keychain.app/Contents/MacOS/GPG Keychain",
+      "remote-domains": [
+        "openpgp.org",
+        "gpgtools.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/GPGTools/GPGSuite_Updater.app/Contents/MacOS/GPGSuite_Updater",
+      "remote-domains": [
+        "gpgtools.org",
+        "gpgtools.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

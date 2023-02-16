@@ -1,0 +1,22 @@
+{
+  "name": "Apple Mail",
+  "description": "Rules for Apple Mail",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/System/Applications/Mail.app/Contents/MacOS/Mail",
+      "remote-domains": [
+        "me.com"
+      ],
+      "ports": "25,143,465,585,587,993",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Applications/Mail.app/Contents/MacOS/Mail",
+      "remote": "any",
+      "ports": "80,443",
+      "protocol": "tcp"
+    }
+  ]
+}

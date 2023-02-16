@@ -1,0 +1,26 @@
+{
+  "name": "chromium",
+  "description": "Rules for Chromium - An open-source browser project that aims to build a safer, faster, and more stable way for all Internet users to experience the web.",
+  "rules": [
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Applications/Chromium.app/Contents/MacOS/Chromium",
+      "remote": "local-net"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Chromium.app/Contents/MacOS/Chromium",
+      "ports": "53,1900",
+      "protocol": "udp",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Chromium.app/Contents/MacOS/Chromium",
+      "ports": "80,443",
+      "protocol": "tcp",
+      "remote": "any"
+    }
+  ]
+}

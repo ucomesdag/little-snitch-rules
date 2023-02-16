@@ -1,0 +1,27 @@
+{
+  "name" : "Discord",
+  "description" : "Rules for Discord - Discord is the easiest way to communicate over voice, video, and text.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/Discord.app/Contents/MacOS/Discord",
+      "remote-domains" : [
+        "adguard.org",
+        "discord.com",
+        "discord.gg",
+        "discord.media",
+        "discordapp.com",
+        "discordapp.net"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Discord.app/Contents/MacOS/Discord",
+      "remote" : "any",
+      "ports" : "50001-50004",
+      "protocol" : "udp"
+    }
+  ]
+}

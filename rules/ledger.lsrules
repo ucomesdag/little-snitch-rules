@@ -1,0 +1,72 @@
+{
+  "name" : "Ledger",
+  "description" : "Rules for Ledger - Hardware Wallet & Cold Wallet.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "process" : "/Applications/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote-domains" : [
+        "ledger.app"
+      ],
+      "ports" : "80",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote-domains" : [
+        "fontawesome.com",
+        "google.com",
+        "googleapis.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "lido.fi",
+        "paraswap.io",
+        "ramp.network",
+        "youhodler.com"
+      ],
+      "ports" : "443",
+      "protocol" : "udp"
+    },
+    {
+      "action" : "allow",
+      "ports" : "19302",
+      "process" : "/Applications/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "protocol" : "udp",
+      "remote-domains" : "google.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "/Applications/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote-domains" : [
+        "googletagmanager.com",
+        "gstatic.com",
+        "sentry.io"
+      ],
+      "ports" : "443",
+      "protocol" : "udp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Ledger Extension.app/Contents/PlugIns/LedgerConnect Extension.appex/Contents/MacOS/LedgerConnect Extension",
+      "remote-domains" : [
+        "sentry.io"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp"
+    }
+  ]
+}

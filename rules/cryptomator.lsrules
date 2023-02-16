@@ -1,0 +1,15 @@
+{
+  "name": "Cryptomator",
+  "description": "Rules for Cryptomator - Free Cloud Encryption for Dropbox & Co",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Cryptomator.app/Contents/MacOS/Cryptomator",
+      "remote-domains": [
+        "cryptomator.org"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "name": "Visual Studio Code",
+  "description": "Rules for Visual Studio Code - Code Editing. Redefined.",
+  "rules": [
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "ports" : "55222,57194",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "protocol" : "tcp",
+      "remote" : "any",
+      "via" : "/opt/homebrew/Cellar/python@3.11/3.11.4_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/Users/uco/.pyenv/versions/3.10.9/bin/python3.10"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/Users/uco/.pyenv/versions/3.11.4/bin/python3.11"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/Users/uco/.pyenv/versions/3.11.4/bin/python3.11"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote-domains" : [
+        "ntp.org"
+      ],
+      "ports" : "123",
+      "protocol" : "udp",
+      "via" : "/opt/homebrew/Cellar/podman/4.6.1/libexec/podman/gvproxy"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/podman/4.6.1/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/git/2.39.2/libexec/git-core/git-remote-http"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/wget/1.21.4/bin/wget"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/podman/4.6.1/bin/podman-remote"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/minikube/1.31.2/bin/minikube"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "6443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/tektoncd-cli/0.31.2/bin/tkn"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "6443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/kubernetes-cli/1.28.0/bin/kubectl"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "6443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/openshift-cli/4.13.8/bin/oc"
+    }
+  ]
+}
