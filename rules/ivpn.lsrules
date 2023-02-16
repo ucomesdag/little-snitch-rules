@@ -1,0 +1,28 @@
+{
+  "name": "IVPN",
+  "description": "Rules for IVPN - VPN for Privacy & Security.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/IVPN.app/Contents/MacOS/IVPN",
+      "remote-domains": [
+        "ivpn.net"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/IVPN.app/Contents/MacOS/IVPN",
+      "remote-domains": [
+        "ivpn.net"
+      ],
+      "via": "/Applications/IVPN.app/Contents/Frameworks/IVPN Helper.app/Contents/MacOS/IVPN Helper"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/IVPN.app/Contents/MacOS/IVPN Agent",
+      "remote": "any"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "iTerm2",
+  "description": "Rules for iTerm2 - macOS Terminal Replacement.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "via": "/usr/local/Cellar/wget/1.21.3_1/bin/wget"
+    }
+  ]
+}

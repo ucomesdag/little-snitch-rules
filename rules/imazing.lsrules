@@ -1,0 +1,44 @@
+{
+  "name": "iMazing",
+  "description": "Rules for iMazing - iPhone, iPad & iPod Manager for Mac",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing",
+      "remote-domains": [
+        "appcenter.ms",
+        "imazing.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing",
+      "remote-domains": [
+        "imazing.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini",
+      "remote-domains": [
+        "appcenter.ms",
+        "imazing.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini",
+      "remote-domains": [
+        "imazing.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    }
+  ]
+}

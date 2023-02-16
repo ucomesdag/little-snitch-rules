@@ -1,0 +1,20 @@
+{
+  "name": "VMware Fusion",
+  "description": "Rules for VMware Fusion - Desktop Hypervisors for Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/VMware Fusion.app/Contents/MacOS/VMware Fusion",
+      "remote-domains": [
+        "vmware.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/VMware Fusion.app/Contents/MacOS/VMware Fusion",
+      "remote": "any"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Firefox",
+  "description": "Rules for Firefox - Firefox Browser: fast, private & safe web browser.",
+  "rules": [
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+      "protocol": "tcp",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+      "protocol": "tcp",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+      "protocol": "udp",
+      "remote": "any"
+    }
+  ]
+}

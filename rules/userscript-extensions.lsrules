@@ -1,0 +1,13 @@
+{
+  "name": "Userscripts Safari",
+  "description": "Rules for Userscripts Safari - An open-source userscript editor for Safari.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Userscripts.app/Contents/PlugIns/Userscripts Extension.appex/Contents/MacOS/Userscripts Extension",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

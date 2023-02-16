@@ -1,0 +1,24 @@
+{
+  "description": "Hue Essentials",
+  "name": "Rules for Hue Essentials - Discover ways to get the most out of your smart lighting. Imagine unlimited possibilities in your smart home.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Hue Essentials.app/Contents/MacOS/Hue Essentials",
+      "remote-domains": [
+        "diyhue.org",
+        "meethue.com",
+        "phoscon.de"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Hue Essentials.app/Contents/MacOS/Hue Essentials",
+      "remote": "any",
+      "ports": "1900",
+      "protocol": "udp"
+    }
+  ]
+}

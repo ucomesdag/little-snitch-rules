@@ -1,0 +1,20 @@
+{
+  "name": "Microsoft OneNote",
+  "description": "Rules for Microsoft OneNote - The digital note-taking app for your devices.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft OneNote.app/Contents/MacOS/Microsoft OneNote",
+      "remote-domains": [
+        "azurewebsites.net",
+        "live.com",
+        "live.net",
+        "microsoft.com",
+        "office.com",
+        "onenote.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

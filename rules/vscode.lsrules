@@ -1,0 +1,53 @@
+{
+  "name": "Visual Studio Code",
+  "description": "Rules for Visual Studio Code - Code Editing. Redefined.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "local-net",
+      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "local-net",
+      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "53,63913",
+      "protocol": "udp",
+      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote-domains": [
+        "visualstudio.com",
+        "cloudapp.net",
+        "github.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/bridge/dsc"
+    }
+  ]
+}

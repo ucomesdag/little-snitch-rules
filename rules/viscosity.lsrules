@@ -1,0 +1,15 @@
+{
+  "name": "Viscosity",
+  "description": "Rules for Viscosity - OpenVPN Client for Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Viscosity.app/Contents/MacOS/Viscosity",
+      "remote-domains": [
+        "sparklabs.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

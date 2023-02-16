@@ -1,0 +1,27 @@
+{
+  "name": "Textual",
+  "description": "Rules for Textual - IRC for macOS.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Textual 7.app/Contents/MacOS/Textual 7",
+      "remote": "any",
+      "ports": "6660–6669,6697,7000",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Textual 7.app/Contents/MacOS/Textual 7",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Textual 7.app/Contents/MacOS/Textual 7",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "udp"
+    }
+  ]
+}

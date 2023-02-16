@@ -1,0 +1,39 @@
+{
+  "name": "LiquidText",
+  "description": "Rules for LiquidText - \"PDF Editor with Superpowers\"",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/LiquidText.app/Contents/MacOS/LiquidText",
+      "remote-domains": [
+        "liquidtext.net"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/LiquidText.app/Contents/MacOS/LiquidText",
+      "remote-domains": [
+        "azurewebsites.net",
+        "crashlytics.com",
+        "googleapis.com",
+        "ipinfo.io",
+        "mixpanel.com",
+        "pndsn.com",
+        "windows.net"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/LiquidText.app/Contents/MacOS/LiquidText",
+      "remote-domains": [
+        "googleapis.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Dash",
+  "description": "Rules for Dash - Dash an API Documentation Browser and Code Snippet Manager.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": [
+        "appcenter.ms",
+        "appveyor.com",
+        "awesome.re",
+        "azure.com",
+        "badgen.net",
+        "beerpay.io",
+        "circleci.com",
+        "codeclimate.com",
+        "codecov.io",
+        "coveralls.io",
+        "docker.com",
+        "drone.io",
+        "fossa.io",
+        "github.com",
+        "github.io",
+        "githubusercontent.com",
+        "gitter.im",
+        "go-search.org",
+        "go.dev",
+        "godoc.org",
+        "goreportcard.com",
+        "goswagger.io",
+        "imgur.com",
+        "jsdelivr.net",
+        "kapeli.com",
+        "liberapay.com",
+        "msecnd.net",
+        "opencollective.com",
+        "rawgit.com",
+        "repl.it",
+        "replit.com",
+        "s3.amazonaws.com",
+        "shields.io",
+        "sourcegraph.com",
+        "sourcerer.io",
+        "travis-ci.com",
+        "travis-ci.org",
+        "twimg.com",
+        "vt100.net",
+        "wercker.com",
+        "wikimedia.org",
+        "www.drone.io"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": [
+        "github.io",
+        "godoc.org",
+        "imgur.com",
+        "jsoniter.com",
+        "shields.io",
+        "vt100.net"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    }
+  ]
+}
