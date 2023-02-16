@@ -1,0 +1,27 @@
+{
+  "name": "Apple Maps",
+  "description": "Rules for Apple Maps",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/System/Applications/Maps.app/Contents/MacOS/Maps",
+      "remote-domains": [
+        "4sqi.net",
+        "apple-mapkit.com",
+        "bstatic.com",
+        "yelpcdn.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Applications/Maps.app/Contents/MacOS/Maps",
+      "remote-domains": [
+        "bstatic.com"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    }
+  ]
+}

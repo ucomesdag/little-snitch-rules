@@ -6,9 +6,9 @@ Rule groups allows for rules to be shared by enabling subscriptions. This reposi
 
 # Usage
 
-To subscribe to one of the rules available, open Little Snitch Configuration.app and go to `File > New Rule Group Subscription (⇧⌘M)`. On GitHub, click on the desired rule and hit `Download`. This will redirect you to a page (e.g. [1Password](http://raw.githubusercontent.com/ucomesdag/little-snitch-rules/master/rules/1Password.lsrules)) which you can use directly as the input of the rule subscription URL.
+To subscribe to one of the rules available, open Little Snitch Configuration.app and go to `File > New Rule Group Subscription (⇧⌘M)`. On GitHub, click on the desired rule and hit `Download`. This will redirect you to a page (e.g. [All Rules](http://raw.githubusercontent.com/ucomesdag/little-snitch-rules/master/rules/all.lsrules)) which you can use directly as the input of the rule subscription URL.
 
-![New Rule Group Subscriptions](images/new-rule-group-subscription.png)
+![New Rule Group Subscriptions](.new-rule-group-subscription.png)
 
 Under `Preferences > Advanced`, you can choose to `Approve rules automatically` as they are added to this repository or selectively enable/disable while subscribing a particular rule set.
 

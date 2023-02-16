@@ -1,0 +1,16 @@
+
+{
+  "name": "GitLens",
+  "description": "Rules for GitLens — Git supercharged.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote-domains": [
+        "gitkraken.com"
+      ],
+      "ports": "4318",
+      "protocol": "tcp"
+    }
+  ]
+}

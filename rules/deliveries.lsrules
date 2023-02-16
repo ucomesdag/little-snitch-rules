@@ -1,0 +1,16 @@
+{
+  "name": "Deliveries",
+  "description": "Rules for Deliveries a package tracker for iPhone, iPad, Apple Watch, and Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Deliveries.app/Contents/MacOS/Deliveries",
+      "remote-domains": [
+        "junecloud.com",
+        "postnl.nl"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

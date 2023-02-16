@@ -1,0 +1,37 @@
+{
+  "name": "MultiViewer for F1",
+  "description": "Rules for MultiViewer for F1 - Experience F1TV® like never before.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote-domains": [
+        "akamaized.net",
+        "contentdirect.tv",
+        "f1mv.com",
+        "formula1.com",
+        "googleapis.com",
+        "multiviewer.app"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote-domains": [
+        "formula1.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote": "any",
+      "ports": "56441,59012",
+      "protocol": "udp"
+    }
+  ]
+}

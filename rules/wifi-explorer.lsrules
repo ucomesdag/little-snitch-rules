@@ -1,0 +1,15 @@
+{
+  "name": "WiFi Explorer",
+  "description": "Rules for WiFi Explorer - Wi-Fi Scanner and Analyzer for Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/WiFi Explorer.app/Contents/MacOS/WiFi Explorer",
+      "remote-domains": [
+        "s3.amazonaws.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "iStat Menus",
+  "description": "Rules for iStat Menus an advanced Mac system monitor for your menubar.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iStat Menus.app/Contents/MacOS/iStat Menus",
+      "remote-domains": [
+        "paddle.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/iStat Menus 6/iStat Menus Status.app/Contents/MacOS/iStat Menus Status",
+      "remote-domains": [
+        "istatmenus.app"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/iStat Menus 6/iStatMenusAgent.app/Contents/MacOS/iStatMenusAgent",
+      "remote-domains": [
+        "istatmenus.app"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/iStat Menus 6/iStatMenusDaemon",
+      "remote": "bpf"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Microsoft Outlook",
+  "description": "Rules for Microsoft Outlook - Email client.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Microsoft Outlook.app/Contents/MacOS/Microsoft Outlook",
+      "remote-domains": [
+        "live.com",
+        "microsoft.com",
+        "office.com",
+        "office.net",
+        "outlookmobile.com",
+        "skype.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

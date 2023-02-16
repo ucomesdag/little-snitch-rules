@@ -1,0 +1,32 @@
+{
+  "name": "VIA",
+  "description": "Rules for VIA - Your keyboard's best friend Simple Plug in your keyboard.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "path.private/var/folders/*/VIA.app/Contents/MacOS/VIA",
+      "remote-domains": [
+        "usevia.app",
+        "visualstudio.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "path.private/var/folders/*/VIA.app/Contents/MacOS/VIA",
+      "remote-domains": [
+        "usevia.app"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "path.private/var/folders/*/VIA.app/Contents/MacOS/VIA",
+      "remote": "any",
+      "ports": "53",
+      "protocol": "udp"
+    }
+  ]
+}

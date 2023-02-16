@@ -1,0 +1,27 @@
+{
+  "name": "Sonos",
+  "description": "Rules for Sonos - Wireless Speakers and Home Sound Systems.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Sonos.app/Contents/MacOS/Sonos",
+      "remote": "any",
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Sonos.app/Contents/MacOS/Sonos",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Sonos.app/Contents/MacOS/Sonos",
+      "remote": "any",
+      "ports": "1900",
+      "protocol": "udp"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "name": "MacOS Services",
+  "description": "Rules for MacOS Services - Services part of MacOS",
+  "rules": [
+    {
+      "notes": "AMPDevicesAgent is apart of the Frameworks in your Library folder to allow Finder to synchronization and backup with iOS & iPadOS devices.",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/Support/AMPDevicesAgent",
+      "remote-domains": [
+        "itunes.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "cloudd is the system daemon backing the CloudKit feature.",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+      "remote-domains": [
+        "amazonaws.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "com.apple.geod is part of the Location services.",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+      "remote-domains": [
+        "apple-mapkit.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "destinationd is part of MacOS Core services.",
+      "action": "allow",
+      "process": "/System/Library/CoreServices/destinationd",
+      "remote-domains": [
+        "apple.news"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "gamed is part of the GameKit.",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/GameCenterFoundation.framework/Versions/A/gamed",
+      "remote": "any"
+    },
+    {
+      "notes": "IMTransferAgent is the iMessage attachment handler.",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferAgent.app/Contents/MacOS/IMTransferAgent",
+      "remote-domains": [
+        "amazonaws.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "NetBIOS is Microsoft's networking service.",
+      "action": "allow",
+      "process": "/usr/sbin/netbiosd",
+      "remote": "any",
+      "ports": "137,138",
+      "protocol": "udp"
+    },
+    {
+      "notes": "newsd is part of Apple News.",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/NewsDaemon.framework/newsd",
+      "remote-domains": [
+        "apple.news"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "nsurlsessiond is used for iCloud sync.",
+      "action": "allow",
+      "process": "/usr/libexec/nsurlsessiond",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "passd is part of PassKit (Apple Pay and Wallet)",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/PassKitCore.framework/passd",
+      "remote-domains": [
+        "mastercard.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "notes": "Identity Services provides access to users and groups.",
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
+      "remote": "any",
+      "ports": "3479-3496",
+      "protocol": "udp"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Ivory for Mastodon",
+  "description": "Rules for Ivory for Mastodon by Tapbots",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Ivory.app/Contents/MacOS/Ivory",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ForkLift",
+  "description": "ForkLift - most advanced file manager and FTP client for macOS.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/ForkLift.app/Contents/MacOS/ForkLift",
+      "remote-domains": [
+        "binarynights.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    }
+  ]
+}
