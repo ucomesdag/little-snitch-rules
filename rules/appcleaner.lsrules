@@ -1,0 +1,20 @@
+{
+  "name": "AppCleaner",
+  "description": "Rules for AppCleaner - AppCleaner a small application which allows you to thoroughly uninstall unwanted apps.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/AppCleaner.app/Contents/MacOS/AppCleaner",
+      "remote-domains": "freemacsoft.net",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.X85ZX835W9/net.freemacsoft.AppCleaner",
+      "remote-hosts": "freemacsoft.net",
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

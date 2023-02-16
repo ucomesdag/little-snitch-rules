@@ -1,0 +1,20 @@
+{
+  "name": "BackupLoupe",
+  "description": "Rules for BackupLoupe - BackupLoupe lets you peek inside backups, tells you which files have been backed up when and where.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/BackupLoupe.app/Contents/MacOS/BackupLoupe",
+      "remote-domains": "soma-zone.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/BackupLoupe.app/Contents/MacOS/BackupLoupe",
+      "remote-domains": "soma-zone.com",
+      "protocol": "udp",
+      "ports": "443"
+    }
+  ]
+}

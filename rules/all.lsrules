@@ -1,0 +1,2565 @@
+{
+  "name": "Little Snitch Rules",
+  "description": "Complete rule set from https://github.com/ucomesdag/little-snitch-rules",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/1Password.app/Contents/MacOS/1Password",
+      "remote-domains": [
+        "1password.ca",
+        "1password.com",
+        "1password.eu",
+        "1passwordservices.com",
+        "1passwordusercontent.ca",
+        "1passwordusercontent.com",
+        "1passwordusercontent.eu",
+        "accounts.brex.com",
+        "agilebits.com",
+        "api.privacy.com",
+        "api.pwnedpasswords.com",
+        "fastmail.com",
+        "in.appcenter.ms",
+        "jmap.fastmail.com",
+        "platform.brex.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2BUA8C4S2C/com.1password.1password",
+      "remote-domains": "1password.eu",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Adguard.app/Contents/MacOS/Adguard",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Adguard.app/Contents/MacOS/Adguard",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Adguard.app/Contents/MacOS/Adguard",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "53"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.TC3Q7MAJXF/com.adguard.mac.adguard.network-extension",
+      "remote-hosts": "sb.adtidy.org",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/AmpliTube 5.app/Contents/MacOS/AmpliTube 5",
+      "remote-domains": "ikmultimedia.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/AmpliTube 5.app/Contents/MacOS/AmpliTube 5",
+      "remote-domains": "google.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/AppCleaner.app/Contents/MacOS/AppCleaner",
+      "remote-domains": "freemacsoft.net",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.X85ZX835W9/net.freemacsoft.AppCleaner",
+      "remote-hosts": "freemacsoft.net",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/MacOS/Arq",
+      "remote-domains": [
+        "live.com",
+        "microsoft.com",
+        "microsoftonline.com",
+        "msftauth.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains": "me.com",
+      "protocol": "tcp",
+      "ports": "587"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Arq.app/Contents/Resources/ArqAgent.app/Contents/MacOS/ArqAgent",
+      "remote-domains": [
+        "1drv.com",
+        "amazonaws.com",
+        "arqbackup.com",
+        "backblaze.com",
+        "backblazeb2.com",
+        "dropboxapi.com",
+        "github.com",
+        "microsoft.com",
+        "microsoftonline.com",
+        "onedrive.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.48ZCSDVL96/com.haystacksoftware.ArqAgent",
+      "remote-hosts": "github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git-lfs/*/bin/git-lfs"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.48ZCSDVL96/com.haystacksoftware.ArqAgent",
+      "remote-hosts": "github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git/*/libexec/git-core/git-remote-http"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.6EPAF2X3PR/org.audacityteam.audacity4",
+      "remote-hosts": [
+        "api.audio.com",
+        "download.ikmultimedia.com",
+        "g1.ikmultimedia.com",
+        "sentry.audacityteam.org",
+        "updates.audacityteam.org",
+        "www.google.com",
+        "www.ikmultimedia.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/BackupLoupe.app/Contents/MacOS/BackupLoupe",
+      "remote-domains": "soma-zone.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/BackupLoupe.app/Contents/MacOS/BackupLoupe",
+      "remote-domains": "soma-zone.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote-domains": [
+        "balena-cloud.com",
+        "balena.io",
+        "github.com",
+        "githubusercontent.com",
+        "sentry.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote-domains": [
+        "balena-cloud.com",
+        "balena.io",
+        "googleapis.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.66H43P8FRG/io.balena.etcher",
+      "remote-hosts": [
+        "efp.balena.io",
+        "o95242.ingest.sentry.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote": "any",
+      "direction": "incoming"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/balenaEtcher.app/Contents/MacOS/balenaEtcher",
+      "remote-domains": [
+        "gstatic.com",
+        "sentry.io"
+      ],
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.T3UBR9Y3B2/com.bambulab.bambu-studio",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "80,443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.T3UBR9Y3B2/com.bambulab.bambu-studio",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "2021,3478,10001-10512"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.T3UBR9Y3B2/com.bambulab.bambu-studio",
+      "remote-hosts": [
+        "cms.bblmw.com",
+        "fonts.gstatic.com",
+        "makerworld.bblmw.com",
+        "www.google.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.T3UBR9Y3B2/com.bambulab.bambu-studio",
+      "remote-domains": "bambulab.com",
+      "protocol": "tcp",
+      "ports": "8883"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.T3UBR9Y3B2/com.bambulab.bambu-studio",
+      "remote-domains": [
+        "bambulab.com",
+        "public-cdn.bblmw.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "deny",
+      "process": "identifier.T3UBR9Y3B2/com.bambulab.bambu-studio",
+      "remote-hosts": [
+        "connect.facebook.net",
+        "www.facebook.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.24J875RH8J/com.surteesstudios.Bartender",
+      "remote-hosts": [
+        "api-production.8-lives-cat.io",
+        "api.revenuecat.com",
+        "downloads.macbartender.com",
+        "macbartender.com",
+        "www.macbartender.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.24J875RH8J/com.surteesstudios.Bartender",
+      "remote-hosts": [
+        "api.revenuecat.com",
+        "downloads.macbartender.com",
+        "macbartender.com",
+        "www.macbartender.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/bin/curl",
+      "remote-domains": "brew.sh",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/calibre.app/Contents/MacOS/calibre",
+      "remote-domains": "calibre-ebook.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/ControllerForHomeKit.app/Contents/MacOS/ControllerForHomeKit",
+      "remote-domains": "onesignal.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/ControllerForHomeKit.app/Contents/MacOS/ControllerForHomeKit",
+      "remote-domains": [
+        "controllerforhomekit.com",
+        "eu-central-1.amazonaws.com",
+        "mixpanel.com",
+        "onesignal.com",
+        "revenuecat.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.BBTM5HL233/com.janandre.HomeKitTimers",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/local/crc/crc",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/local/crc/crc",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "123"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/local/crc/crc",
+      "remote-domains": "quay.io",
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Cryptomator.app/Contents/MacOS/Cryptomator",
+      "remote-domains": "cryptomator.org",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.YZQJQUHA3L/org.cryptomator",
+      "remote-addresses": [
+        "212.47.246.225",
+        "51.15.240.133"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.YZQJQUHA3L/org.cryptomator",
+      "remote-hosts": "api.cryptomator.org",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.WDNLXAD4W8/com.utmapp.UTM",
+      "remote-hosts": [
+        "api.github.com",
+        "getutm.app",
+        "github.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.WDNLXAD4W8/llc.turing.CrystalFetch",
+      "remote-hosts": "dl.delivery.mp.microsoft.com",
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.WDNLXAD4W8/llc.turing.CrystalFetch",
+      "remote-hosts": "worproject.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.WDNLXAD4W8/llc.turing.CrystalFetch",
+      "remote-hosts": [
+        "download.microsoft.com",
+        "go.microsoft.com",
+        "worproject.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.PL47UP47QQ/com.cdprojektred.cyberpunk",
+      "remote-hosts": "in-game.cdprojekt.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.PL47UP47QQ/com.cdprojektred.cyberpunk",
+      "remote-domains": "live.cdpred.services",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/DaisyDisk.app/Contents/MacOS/DaisyDisk",
+      "remote-domains": "daisydiskapp.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": [
+        "appcenter.ms",
+        "appveyor.com",
+        "awesome.re",
+        "azure.com",
+        "badgen.net",
+        "beerpay.io",
+        "circleci.com",
+        "cljdoc.org",
+        "codeclimate.com",
+        "codecov.io",
+        "cookielaw.org",
+        "coveralls.io",
+        "dartlang.org",
+        "docker.com",
+        "drone.io",
+        "fossa.com",
+        "fossa.io",
+        "github.com",
+        "github.io",
+        "githubusercontent.com",
+        "gitter.im",
+        "go-search.org",
+        "go.dev",
+        "godoc.org",
+        "google.com",
+        "googleapis.com",
+        "goreportcard.com",
+        "goswagger.io",
+        "haskell.org",
+        "hex.pm",
+        "imgur.com",
+        "jsdelivr.net",
+        "kapeli.com",
+        "liberapay.com",
+        "maven.org",
+        "msecnd.net",
+        "onetrust.com",
+        "opencollective.com",
+        "packagist.org",
+        "rawgit.com",
+        "repl.it",
+        "replit.com",
+        "rubygems.org",
+        "s3.amazonaws.com",
+        "shields.io",
+        "sourcegraph.com",
+        "sourcerer.io",
+        "sstatic.net",
+        "stackoverflow.com",
+        "travis-ci.com",
+        "travis-ci.org",
+        "twimg.com",
+        "vt100.net",
+        "wercker.com",
+        "wikimedia.org",
+        "www.drone.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": [
+        "github.io",
+        "gitter.im",
+        "go-search.org",
+        "godoc.org",
+        "imgur.com",
+        "jsoniter.com",
+        "maven.org",
+        "shields.io",
+        "vt100.net"
+      ],
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": [
+        "google.com",
+        "shields.io"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.JP58VMK957/com.kapeli.dashdoc",
+      "remote": "any"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/Dash.app/Contents/MacOS/Dash",
+      "remote-domains": "gstatic.com",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.96RLY8D2JE/com.505games.deathstranding",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Deliveries.app/Contents/Library/LoginItems/Deliveries Express.app/Contents/MacOS/Deliveries Express",
+      "remote-domains": "junecloud.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Deliveries.app/Contents/MacOS/Deliveries",
+      "remote-domains": [
+        "amazon.com",
+        "amazon.de",
+        "amazon.nl",
+        "deliveries.app",
+        "dpd.de",
+        "gls-group.eu",
+        "junecloud.com",
+        "media-amazon.com",
+        "postnl.nl",
+        "siege-amazon.com",
+        "ssl-images-amazon.com",
+        "ups.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Deliveries.app/Contents/PlugIns/Deliveries Widget.appex/Contents/MacOS/Deliveries Widget",
+      "remote-domains": [
+        "amazon.com",
+        "amazon.de",
+        "amazon.nl",
+        "deliveries.app",
+        "dpd.de",
+        "gls-group.eu",
+        "junecloud.com",
+        "media-amazon.com",
+        "postnl.nl",
+        "siege-amazon.com",
+        "ssl-images-amazon.com",
+        "ups.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.PB4R74AA4J/com.junecloud.Deliveries",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.PB4R74AA4J/com.junecloud.Deliveries.Updater",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.PB4R74AA4J/com.junecloud.Deliveries.Widget",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HX7739G8FX/node",
+      "remote-addresses": [
+        "239.255.255.250"
+      ],
+      "protocol": "udp",
+      "ports": "1900"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HX7739G8FX/node",
+      "remote-hosts": "discovery.meethue.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93VXCB8Q5/com.elgato.StreamDeck",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/EXR.app/Contents/MacOS/EXR",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "10001"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/EXR.app/Contents/MacOS/EXR",
+      "remote-domains": [
+        "exrgame.com",
+        "sentry.io",
+        "unity3d.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "80,443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Firefox.app/Contents/MacOS/firefox",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Firefox.app/Contents/MacOS/pingsender",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.43AQ936H96/org.mozilla.firefox",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "80,443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.43AQ936H96/org.mozilla.firefox",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.XMV2TR3XRX/com.gifox.gifox2-appstore",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/GoodNotes.app/Contents/MacOS/GoodNotes",
+      "remote-domains": [
+        "app-measurement.com",
+        "appcenter.ms",
+        "browser-intake-datadoghq.com",
+        "crashlytics.com",
+        "goodnotes.email",
+        "goodnotescloud.com",
+        "goodnotesplatform.com",
+        "googleapis.com",
+        "mixpanel.com",
+        "pndsn.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/GoodNotes.app/Contents/MacOS/GoodNotes",
+      "remote-domains": [
+        "app-measurement.com",
+        "ntp.org"
+      ],
+      "protocol": "udp",
+      "ports": "123"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/GoodNotes.app/Contents/MacOS/GoodNotes",
+      "remote-domains": [
+        "crashlytics.com",
+        "googleapis.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.C88F57F4TJ/com.goodnotesapp.x",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/GPG Keychain.app/Contents/MacOS/GPG Keychain",
+      "remote-domains": [
+        "gpgtools.com",
+        "openpgp.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Library/Application Support/GPGTools/GPGSuite_Updater.app/Contents/MacOS/GPGSuite_Updater",
+      "remote-domains": [
+        "gpgtools.com",
+        "gpgtools.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.4S4DG3MFJC/com.arobas-music.guitarpro8",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iA Writer.app/Contents/MacOS/iA Writer",
+      "remote-domains": [
+        "cloudflare.com",
+        "ia.net",
+        "kxcdn.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.27N4MQEA55/pro.writer.mac",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/IINA.app/Contents/MacOS/IINA",
+      "remote-domains": "iina.io",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/IINA.app/Contents/MacOS/IINA",
+      "remote-domains": [
+        "iina.io",
+        "youtube.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.67CQ77V27R/com.colliderli.iina",
+      "remote-hosts": [
+        "iina.io",
+        "www.iina.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.67CQ77V27R/com.colliderli.iina",
+      "remote-hosts": [
+        "iina.io",
+        "www.iina.io"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.67CQ77V27R/com.colliderli.iina",
+      "remote-domains": "streamgate.nl",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/IK Product Manager.app/Contents/MacOS/IK Product Manager",
+      "remote-domains": [
+        "googleapis.com",
+        "ikmultimedia.com",
+        "typekit.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.S78FW55573/com.ikmultimedia.productmanager",
+      "remote": "any"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/IK Product Manager.app/Contents/MacOS/IK Product Manager",
+      "remote-domains": "gstatic.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/ImageOptim.app/Contents/MacOS/ImageOptim",
+      "remote-domains": "imageoptim.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini",
+      "remote-domains": "imazing.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini",
+      "remote-domains": [
+        "appcenter.ms",
+        "imazing.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing",
+      "remote-domains": "imazing.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing",
+      "remote-domains": [
+        "appcenter.ms",
+        "imazing.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing2Mac.Mini",
+      "remote-hosts": "www.baidu.com",
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing2Mac.Mini",
+      "remote-hosts": [
+        "api.imazing.com",
+        "downloads.imazing.com",
+        "www.google.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing3Mac",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing3Mac",
+      "remote-hosts": "imazing.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing3Mac",
+      "remote-hosts": [
+        "static1.squarespace.com",
+        "suivi.chronopost.fr",
+        "www.amazon.co.uk",
+        "xn--matriel-dya.net"
+      ],
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.NQ2242YCB5/com.firecore.infuse",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iStat Menus.app/Contents/MacOS/iStat Menus",
+      "remote-domains": "paddle.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote": "bpf"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-hosts": [
+        "api.checkout.com",
+        "authentication-devices.checkout.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "global.localizecdn.com",
+        "m.stripe.network",
+        "v3.paddleapi.com",
+        "www.rsa3dsauth.co.uk",
+        "www.securesuite.co.uk"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-hosts": [
+        "fonts.gstatic.com",
+        "global.localizecdn.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-domains": "cloudflare.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-domains": [
+        "istatmenus.app",
+        "paddle.com",
+        "paddle.s3.amazonaws.com",
+        "sentry.io",
+        "stripe.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.agent",
+      "remote-hosts": "updates.istatmenus.app",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.status",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.updater",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "local-net",
+      "direction": "incoming"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "via": "path.opt/homebrew/Cellar/wget/*/bin/wget"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443,8080",
+      "via": "path.opt/homebrew/Cellar/speedtest/*/bin/speedtest"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443",
+      "via": "path.opt/homebrew/Cellar/kubernetes-cli/*/bin/kubectl"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443",
+      "via": "path.opt/homebrew/Cellar/openshift-cli/*/bin/oc"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443,8090",
+      "via": "~/.local/bin/openshift-install"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "123",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "8080",
+      "via": "path.opt/homebrew/Cellar/speedtest/*/bin/speedtest"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "bpf",
+      "via": "path.opt/homebrew/Cellar/nmap/*/bin/nmap"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git-lfs/*/bin/git-lfs"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git/*/libexec/git-core/git-remote-http"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "mirror.openshift.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "quay.io",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/bin/podman-remote"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "registry.opentofu.org",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/opentofu/*/bin/tofu"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": [
+        "dl.google.com",
+        "go.dev",
+        "golang.org",
+        "proxy.golang.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/go/*/libexec/bin/go"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": [
+        "files.pythonhosted.org",
+        "pypi.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "~/.pyenv/versions/3.13.11/bin/python3.13"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": [
+        "files.pythonhosted.org",
+        "pypi.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "~/.pyenv/versions/3.14.2/bin/python3.14"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-domains": "quay.io",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/openshift-cli/*/bin/oc"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-domains": [
+        "docker.com",
+        "docker.io",
+        "redhat.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Ivory.app/Contents/MacOS/Ivory",
+      "remote-domains": [
+        "fosstodon.org",
+        "mastodon.social"
+      ],
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Ivory.app/Contents/PlugIns/Notification Service Extension.appex/Contents/MacOS/Notification Service Extension",
+      "remote-domains": [
+        "fosstodon.org",
+        "mastodon.social"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.9JTH7AWHE6/com.tapbots.Ivory",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.9JTH7AWHE6/com.tapbots.Ivory.widgetextension",
+      "remote-hosts": "fosstodon.org",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.9JTH7AWHE6/com.tapbots.Ivory.widgetextension",
+      "remote-hosts": [
+        "cdn.fosstodon.org",
+        "fosstodon.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements",
+      "remote-domains": "pqrs.org",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.G43BCU2T37/org.pqrs.Karabiner-Elements.Settings",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.G43BCU2T37/org.pqrs.Karabiner-Updater",
+      "remote-hosts": [
+        "appcast.pqrs.org",
+        "github.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/LaunchControl.app/Contents/MacOS/LaunchControl",
+      "remote-domains": "soma-zone.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H665B6EEXC/com.soma-zone.LaunchControl",
+      "remote-hosts": "www.soma-zone.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H665B6EEXC/com.soma-zone.LaunchControl",
+      "remote-hosts": "www.soma-zone.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.X6LFS5BQKN/com.ledger.live",
+      "remote-hosts": [
+        "cdn-eu.configcat.com",
+        "cdn.jsdelivr.net",
+        "customer-2p7tvy1d85x4z068.cloudflarestream.com",
+        "firebaseinstallations.googleapis.com",
+        "firebaseremoteconfig.googleapis.com",
+        "ledger.statuspage.io",
+        "maps.googleapis.com",
+        "o118392.ingest.sentry.io",
+        "resources.live.ledger.app",
+        "use.fontawesome.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.X6LFS5BQKN/com.ledger.live",
+      "remote-domains": [
+        "dash.cloudflare.com",
+        "ledger.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Little Snitch.app/Contents/Components/Little Snitch Software Update.app/Contents/MacOS/Little Snitch Software Update",
+      "remote-domains": "obdev.at",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.MLZF7K7B5R/at.obdev.MicroSnitch",
+      "remote-domains": "obdev.at",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.QED4VVPZWA/com.logi.cp-dev-mgr",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.QED4VVPZWA/com.logi.optionsplus",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.QED4VVPZWA/com.logi.optionsplus.updater",
+      "remote-domains": "optionsplus.logitechg.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.QED4VVPZWA/com.logi.pluginservice",
+      "remote-hosts": [
+        "ingest.sentry.io",
+        "marketplace.logi.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/CoreServices/destinationd",
+      "remote-domains": "apple.news",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "80,443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/Support/AMPDevicesAgent",
+      "remote-domains": "itunes.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+      "remote-domains": [
+        "amazonaws.com",
+        "googleapis.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/DataAccess.framework/Support/dataaccessd",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+      "remote-domains": "apple-mapkit.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/NewsDaemon.framework/newsd",
+      "remote-domains": "apple.news",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/PassKitCore.framework/passd",
+      "remote-domains": "mastercard.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/libexec/nehelper",
+      "remote-domains": "edge.apple",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/libexec/nsurlsessiond",
+      "remote": "any",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/sbin/netbiosd",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "137-138"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.66JC38RDUD/recipes.mela.appkit",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.GCH7VS5Y9R/gvh.MeshtasticClient",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.DM45KD2AQ4/com.electron.mosh-pro",
+      "remote-hosts": [
+        "api.gumroad.com",
+        "ipv4.icanhazip.com",
+        "license.moshpro.app",
+        "updates.moshpro.app"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Mountain Duck.app/Contents/MacOS/Mountain Duck",
+      "remote-domains": [
+        "1drv.com",
+        "cloudfront.net",
+        "cyberduck.io",
+        "dropboxapi.com",
+        "eu-central-1.amazonaws.com",
+        "l-dc-msedge.net",
+        "l-msedge.net",
+        "microsoft.com",
+        "microsoftonline.com",
+        "mountainduck.io",
+        "s3.amazonaws.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.G69SCX94XU/io.mountainduck",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.53EYXA6Q5X/com.electron.multiviewer-for-f1",
+      "remote-hosts": "edgedl.me.gvt1.com",
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.53EYXA6Q5X/com.electron.multiviewer-for-f1",
+      "remote-hosts": [
+        "ajax.googleapis.com",
+        "api.multiviewer.app",
+        "assets.pingone.eu",
+        "f1prodlive.akamaized.net",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "js.stripe.com",
+        "jssdk.opin.media",
+        "m.stripe.com",
+        "m.stripe.network",
+        "r.stripe.com",
+        "releases.multiviewer.app",
+        "update.googleapis.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.53EYXA6Q5X/com.electron.multiviewer-for-f1",
+      "remote-domains": [
+        "cloudflare.com",
+        "contentdirect.tv",
+        "formula1.com",
+        "multiviewer.dev"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.GX645XXEAX/com.mutedeck.mac",
+      "remote-hosts": [
+        "mutedeck.com",
+        "releases.r2.mutedeck.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.GX645XXEAX/com.mutedeck.maintenancetool",
+      "remote-domains": "mutedeck.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HCN94WFRXB/com.meetingdebrief.client",
+      "remote-hosts": [
+        "meetingdebrief.com",
+        "models.meetingdebrief.com",
+        "releases.meetingdebrief.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HCN94WFRXB/com.mutedeck.mac",
+      "remote-addresses": [
+        "188.114.96.0"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HCN94WFRXB/com.mutedeck.mac",
+      "remote-domains": "mutedeck.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Numi.app/Contents/MacOS/Numi",
+      "remote-domains": "sentry.io",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Numi.app/Contents/MacOS/Numi",
+      "remote-domains": [
+        "digitaloceanspaces.com",
+        "numi.app",
+        "paddle.com",
+        "paddleapi.com",
+        "sentry.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.4BT8G3UCSZ/com.dmitrynikolaev.numi",
+      "remote-hosts": "numi-res.b-cdn.net",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/Numi.app/Contents/MacOS/Numi",
+      "remote-domains": "sentry.io",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2MMRE5MTB8/com.obsproject.obs-studio",
+      "remote-hosts": "cdn-fastly.obsproject.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2MMRE5MTB8/com.obsproject.obs-studio",
+      "remote-hosts": [
+        "cdn-fastly.obsproject.com",
+        "ingest.contribute.live-video.net",
+        "ingest.twitch.tv",
+        "obsproject.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.6JSW4SJWN9/md.obsidian",
+      "remote-hosts": [
+        "accounts.google.com",
+        "api.obsidian.md",
+        "docs.google.com",
+        "raw.githubusercontent.com",
+        "releases.obsidian.md",
+        "ssl.gstatic.com",
+        "sync-70.obsidian.md",
+        "www.google.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.3MU9H2V9Y9/ai.ollama.ollama",
+      "remote-hosts": [
+        "ollama.com",
+        "registry.ollama.ai"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.3MU9H2V9Y9/ai.ollama.ollama",
+      "remote-domains": "cloudflarestorage.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.3MU9H2V9Y9/com.electron.ollama",
+      "remote-hosts": [
+        "github.com",
+        "ollama.com",
+        "registry.ollama.ai",
+        "release-assets.githubusercontent.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.3MU9H2V9Y9/com.electron.ollama",
+      "remote-domains": "cloudflarestorage.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Pacifist.app/Contents/MacOS/Pacifist",
+      "remote-domains": "charlessoft.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HRLUCP7QP4/com.charlessoft.pacifist",
+      "remote-hosts": "x.klarnacdn.net",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HRLUCP7QP4/com.charlessoft.pacifist",
+      "remote-hosts": [
+        "cdn.onfastspring.com",
+        "charlessoft.onfastspring.com",
+        "d1f8f9xcsvx3ha.cloudfront.net",
+        "d2kl989519khzp.cloudfront.net",
+        "d8y8nchqlnmka.cloudfront.net",
+        "fastspringresources.com",
+        "www.charlessoft.com",
+        "x.klarnacdn.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Pastebot.app/Contents/MacOS/Pastebot",
+      "remote-domains": "tapbots.net",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/RapidAPI.app/Contents/MacOS/RapidAPI",
+      "remote-domains": [
+        "firebaseio.com",
+        "github.com",
+        "githubusercontent.com",
+        "googleapis.com",
+        "list-manage.com",
+        "paw.cloud",
+        "sentry.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.84599RL58A/com.luckymarmot.Paw",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Raspberry Pi Imager.app/Contents/MacOS/rpi-imager",
+      "remote-domains": [
+        "apertis.org",
+        "github.com",
+        "githubusercontent.com",
+        "kali.org",
+        "lakka.tv",
+        "libreelec.tv",
+        "moodeaudio.org",
+        "moodlebox.net",
+        "raspberrypi.org",
+        "recalbox.com",
+        "retropie.org.uk",
+        "riscosopen.org",
+        "rwth-aachen.de",
+        "ubuntu.com",
+        "volumio.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Raspberry Pi Imager.app/Contents/MacOS/rpi-imager",
+      "remote-domains": [
+        "osmc.tv",
+        "rwth-aachen.de",
+        "thinlinx.com",
+        "volumio.org"
+      ],
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.8RDZTRXE62/com.raspberrypi.rpi-imager",
+      "remote-hosts": "downloads.raspberrypi.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Reeder.app/Contents/MacOS/Reeder",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "80,443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Reeder.app/Contents/MacOS/Reeder",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/com.redhat.PodmanDesktop",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/com.redhat.PodmanDesktop",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "123",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/com.redhat.PodmanDesktop",
+      "remote": "local-net",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/com.redhat.PodmanDesktop",
+      "remote-hosts": [
+        "access.cdn.redhat.com",
+        "access.redhat.com",
+        "api-hummingbird.hummingbird-project.io",
+        "api.access.redhat.com",
+        "api.github.com",
+        "api.openshift.com",
+        "cdn.redhat.com",
+        "console.redhat.com",
+        "developers.redhat.com",
+        "mirror.openshift.com",
+        "podman-desktop.io",
+        "quay.io",
+        "redhat-developer.github.io",
+        "registry.redhat.io",
+        "sso.redhat.com",
+        "subscription.rhsm.redhat.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/com.redhat.PodmanDesktop",
+      "remote-hosts": [
+        "cdn01.quay.io",
+        "quay.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/bin/podman-remote"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/com.redhat.PodmanDesktop",
+      "remote-hosts": [
+        "debian.map.fastlydns.net",
+        "timestamp.comodoca.com"
+      ],
+      "protocol": "tcp",
+      "ports": "80",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/com.redhat.PodmanDesktop",
+      "remote-domains": "pool.ntp.org",
+      "protocol": "udp",
+      "ports": "123"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/crc",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/gvproxy",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HYSCB8KRL2/gvproxy",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "123"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.GH2Y99U35Z/com.witt-software.Rocket-Typist-2",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2Y683PRQWN/cc.ffitch.shottr",
+      "remote-hosts": "shottr-verify-license.blimps.workers.dev",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2Y683PRQWN/cc.ffitch.shottr",
+      "remote-hosts": "shottr.cc",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2Y683PRQWN/cc.ffitch.shottr",
+      "remote-domains": "shottr-verify-license.blimps.workers.dev",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.A7B28PS5HF/jcsalterego.Sky",
+      "remote-hosts": "live-events.workers.bsky.app",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.A7B28PS5HF/jcsalterego.Sky",
+      "remote-hosts": [
+        "api.bsky.app",
+        "app-config.workers.bsky.app",
+        "bsky.app",
+        "bsky.social",
+        "cdn.bsky.app",
+        "go.bsky.app",
+        "ip.bsky.app",
+        "jcsalterego.github.io",
+        "live-events.workers.bsky.app",
+        "public.api.bsky.app",
+        "video.bsky.app",
+        "video.cdn.bsky.app",
+        "web-cdn.bsky.app"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.A7B28PS5HF/jcsalterego.Sky",
+      "remote-domains": "host.bsky.network",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Slack.app/Contents/MacOS/Slack",
+      "remote-domains": [
+        "amazonaws.com",
+        "chime.aws",
+        "slack-edge.com",
+        "slack-imgs.com",
+        "slack.com",
+        "slackb.com",
+        "youtube.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.BQR82RBBHL/com.tinyspeck.slackmacgap",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Smooze Pro.app/Contents/MacOS/Smooze Pro",
+      "remote-domains": "smooze.co",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Smooze Pro.app/Contents/MacOS/Smooze Pro",
+      "remote-domains": [
+        "appcenter.ms",
+        "paddle.com",
+        "paddleapi.com",
+        "s3.amazonaws.com",
+        "smooze.co"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.6TT7VL9KAT/co.smoozepro.macos",
+      "remote-hosts": "smooze.co",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.6TT7VL9KAT/co.smoozepro.macos",
+      "remote-hosts": [
+        "smooze.co",
+        "v3.paddleapi.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.7266XEXAPM/com.rogueamoeba.Loopback",
+      "remote-hosts": [
+        "cdn.rogueamoeba.com",
+        "rogueamoeba.com",
+        "rogueamoeba.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.7266XEXAPM/com.rogueamoeba.loopbackd",
+      "remote-hosts": "rogueamoeba.net",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.7266XEXAPM/com.rogueamoeba.soundsource",
+      "remote-hosts": [
+        "rogueamoeba.com",
+        "rogueamoeba.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.9525X5D6XV/com.tunabellysoftware.tgpro",
+      "remote-hosts": [
+        "licensing.tunabelly.com",
+        "tunabelly-licensing.azurewebsites.net",
+        "v3.paddleapi.com",
+        "www.tunabellysoftware.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2SA9D4CVU8/org.python.python",
+      "remote-hosts": [
+        "files.pythonhosted.org",
+        "micropython.org",
+        "pypi.org",
+        "raw.githubusercontent.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.68GTH78H6S/com.tclementdev.timemachineeditor.scheduler",
+      "remote-hosts": "tclementdev.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.4U5ZET2BEG/de.christianhengst.circleoffifths",
+      "remote-hosts": "o390946.ingest.sentry.io",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.4U5ZET2BEG/de.christianhengst.circleoffifths",
+      "remote-hosts": [
+        "api.ipify.org",
+        "o390946.ingest.sentry.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Transmission.app/Contents/MacOS/Transmission",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "1900"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.5DPYRBHEAR/org.m0k.transmission",
+      "remote": "any"
+    },
+    {
+      "action": "deny",
+      "process": "identifier.5DPYRBHEAR/org.m0k.transmission",
+      "remote": "any",
+      "direction": "incoming"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Trezor Suite.app/Contents/MacOS/Trezor Suite",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443,1234,9001"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J7Y6D5GNLH/app.updatest.Updatest",
+      "remote-hosts": "github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git/*/libexec/git-core/git-remote-http"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J7Y6D5GNLH/app.updatest.Updatest",
+      "remote-hosts": [
+        "access.cdn.redhat.com",
+        "adguard.com",
+        "affinity-update.s3.amazonaws.com",
+        "analytics.brew.sh",
+        "api.github.com",
+        "api.lemonsqueezy.com",
+        "api.updatest.app",
+        "cache.agilebits.com",
+        "cast.assets-arobas-music.com",
+        "cdn-builds.paw.cloud",
+        "cdn-fastly.obsproject.com",
+        "cdn.inmusicbrands.com",
+        "cdn.istatmenus.app",
+        "cdn.numi.app",
+        "cdn.rogueamoeba.com",
+        "codeload.github.com",
+        "daisydiskapp.com",
+        "data.trezor.io",
+        "developers.redhat.com",
+        "developers.yubico.com",
+        "dist.mountainduck.io",
+        "dist.torproject.org",
+        "dl-portal.iina.io",
+        "dl.google.com",
+        "dl.iina.io",
+        "download-installer.cdn.mozilla.net",
+        "download.calibre-ebook.com",
+        "download.live.ledger.com",
+        "download.mikrotik.com",
+        "download.qt.io",
+        "downloads.1password.com",
+        "downloads.imazing.com",
+        "downloads.macbartender.com",
+        "files.mikalaeu.com",
+        "files.numi.app",
+        "formulae.brew.sh",
+        "freemacsoft.net",
+        "ghcr.io",
+        "github.com",
+        "go.seriflabs.com",
+        "handbrake.fr",
+        "imageoptim.com",
+        "iterm2.com",
+        "jcsalterego.github.io",
+        "kapeli.com",
+        "link.adtidy.org",
+        "macbartender.com",
+        "obsproject.com",
+        "pkg-containers.githubusercontent.com",
+        "raw.githubusercontent.com",
+        "release-assets.githubusercontent.com",
+        "releases.greensignal.app",
+        "releases.multiviewer.app",
+        "s.mikalaeu.com",
+        "s.numi.app",
+        "s1.numi.app",
+        "smooze.co",
+        "static.adtidy.org",
+        "swupdate.sparklabs.com",
+        "things.seriflabs.com",
+        "transmissionbt.com",
+        "update.code.visualstudio.com",
+        "update.cyberduck.io",
+        "update.transmissionbt.com",
+        "updates.guitar-pro.com",
+        "updates.moshpro.app",
+        "updates.updatest.app",
+        "updatest.app",
+        "version.cyberduck.io",
+        "vscode.download.prss.microsoft.com",
+        "witt-software.com",
+        "www.charlessoft.com",
+        "www.iina.io",
+        "www.intuitibits.com",
+        "www.macbartender.com",
+        "www.mirrorservice.org",
+        "www.rarlab.com",
+        "www.soma-zone.com",
+        "www.torproject.org",
+        "www.tunabellysoftware.com",
+        "www.wireshark.org",
+        "www.witt-software.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J7Y6D5GNLH/app.updatest.Updatest",
+      "remote-hosts": [
+        "api.updatest.app",
+        "cast.assets-arobas-music.com",
+        "daisydiskapp.com",
+        "downloads.macbartender.com",
+        "iterm2.com",
+        "macbartender.com",
+        "smooze.co",
+        "transmissionbt.com",
+        "update.transmissionbt.com",
+        "updates.moshpro.app",
+        "updates.updatest.app",
+        "updatest.app",
+        "www.iina.io",
+        "www.intuitibits.com",
+        "www.macbartender.com",
+        "www.soma-zone.com",
+        "www.wireshark.org"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J7Y6D5GNLH/app.updatest.Updatest",
+      "remote-domains": [
+        "aws.cloud2.influxdata.com",
+        "rackcdn.com",
+        "s3-eu-west-1.amazonaws.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J74Q8V8V8N/com.userscripts.macos.Userscripts-Extension",
+      "remote-hosts": "update.greasyfork.org",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J74Q8V8V8N/com.userscripts.macos.Userscripts-Extension",
+      "remote-hosts": [
+        "code.jquery.com",
+        "github.com",
+        "raw.githubusercontent.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Viscosity.app/Contents/MacOS/Viscosity",
+      "remote-domains": "sparklabs.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.34XR7GXFPX/com.viscosityvpn.Viscosity",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443,6443",
+      "via": "path.opt/homebrew/Cellar/openshift-cli/*/bin/oc"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443",
+      "via": "path.opt/homebrew/Cellar/kubernetes-cli/*/bin/kubectl"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443",
+      "via": "path.opt/homebrew/Cellar/tektoncd-cli/*/bin/tkn"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "123",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote": "local-net",
+      "via": "path.opt/homebrew/Cellar/nmap/*/bin/ncat"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": "api.github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/wget/*/bin/wget"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": "imap.mail.me.com",
+      "protocol": "tcp",
+      "ports": "993",
+      "via": "path.opt/homebrew/Cellar/python@3.14/*/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": "index.rubygems.org",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "~/.cache/pre-commit/repo2tkud1oe/rbenv-3.3.0/versions/3.3.0/bin/ruby"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": [
+        "codeberg.org",
+        "github.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git/*/libexec/git-core/git-remote-http"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": [
+        "dl.google.com",
+        "go.dev"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/go/*/libexec/bin/go"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": [
+        "docs.python.org",
+        "docs.readthedocs.com",
+        "docs.readthedocs.io",
+        "files.pythonhosted.org",
+        "pypi.org",
+        "www.sphinx-doc.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "~/.pyenv/versions/3.13.11/bin/python3.13"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": [
+        "files.pythonhosted.org",
+        "pypi.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/python@3.14/*/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-hosts": [
+        "github.com",
+        "registry.opentofu.org",
+        "release-assets.githubusercontent.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/opentofu/*/bin/tofu"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode",
+      "remote-domains": "golang.org",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/go/*/libexec/bin/go"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.UBF8T346G9/com.microsoft.VSCode.helper",
+      "remote-hosts": [
+        "api.github.com",
+        "default.exp-tas.com",
+        "education.github.com",
+        "main.vscode-cdn.net",
+        "marketplace.visualstudio.com",
+        "raw.githubusercontent.com",
+        "vscode-sync.trafficmanager.net",
+        "www.schemastore.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/WiFi Explorer.app/Contents/MacOS/WiFi Explorer",
+      "remote-domains": "s3.amazonaws.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/com.adriangranados.Transfer",
+      "remote-hosts": [
+        "buy.paddle.com",
+        "cdn.paddle.com",
+        "checkout.paddle.com",
+        "fonts.googleapis.com",
+        "js.stripe.com",
+        "ld.paddle.com",
+        "v3.paddleapi.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/com.adriangranados.Transfer",
+      "remote-hosts": [
+        "cdnjs.cloudflare.com",
+        "fonts.gstatic.com",
+        "global.localizecdn.com",
+        "www.intuitibits.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/com.adriangranados.Transfer",
+      "remote-domains": "paddle.s3.amazonaws.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/wifiexplorer",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/WiFi Signal.app/Contents/MacOS/WiFi Signal",
+      "remote-domains": "s3.amazonaws.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.SV69C8EQQ8/com.mikrotik.winbox",
+      "remote-addresses": [
+        "255.255.255.255"
+      ],
+      "protocol": "udp",
+      "ports": "5678"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.SV69C8EQQ8/com.mikrotik.winbox",
+      "remote-hosts": "upgrade.mikrotik.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/WireGuard.app/Contents/PlugIns/WireGuardNetworkExtension.appex/Contents/MacOS/WireGuardNetworkExtension",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.L82V4Y2P3C/com.wireguard.macos.network-extension",
+      "remote-addresses": [
+        "87.212.167.21"
+      ],
+      "protocol": "udp",
+      "ports": "54772",
+      "direction": "incoming"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.7Z6EMTD2C6/org.wireshark.Wireshark",
+      "remote": "bpf"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.7Z6EMTD2C6/org.wireshark.Wireshark",
+      "remote-hosts": "www.wireshark.org",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.7Z6EMTD2C6/org.wireshark.Wireshark",
+      "remote-domains": "wireshark.org",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/xSearch.app/Contents/MacOS/xSearch",
+      "remote-domains": [
+        "1password.com",
+        "amazon.cn",
+        "amazon.com",
+        "amazon.nl",
+        "ask.com",
+        "bing.com",
+        "bitchute.com",
+        "bittube.tv",
+        "duckduckgo.com",
+        "ecosia.org",
+        "ekoru.org",
+        "epicgames.com",
+        "fanfiction.net",
+        "flickr.com",
+        "google.com",
+        "indeed.com",
+        "instagram.com",
+        "kavin.rocks",
+        "nature.com",
+        "onesearch.com",
+        "peteyvid.com",
+        "qrcode.show",
+        "techradar.com",
+        "tumblr.com",
+        "twitter.com",
+        "videoshub.com",
+        "whaleslide.com",
+        "wikipedia.org",
+        "you.com",
+        "youtube.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J4Z2NCTR3S/com.iAugus.xSearch",
+      "remote": "any"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/xSearch.app/Contents/MacOS/xSearch",
+      "remote-domains": "google.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/xSearch.app/Contents/MacOS/xSearch",
+      "remote-domains": "gstatic.com",
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

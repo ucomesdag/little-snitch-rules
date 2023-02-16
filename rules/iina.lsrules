@@ -1,0 +1,50 @@
+{
+  "name": "IINA",
+  "description": "Rules for IINA - The modern media player for macOS",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/IINA.app/Contents/MacOS/IINA",
+      "remote-domains": "iina.io",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/IINA.app/Contents/MacOS/IINA",
+      "remote-domains": [
+        "iina.io",
+        "youtube.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.67CQ77V27R/com.colliderli.iina",
+      "remote-hosts": [
+        "iina.io",
+        "www.iina.io"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.67CQ77V27R/com.colliderli.iina",
+      "remote-hosts": [
+        "iina.io",
+        "www.iina.io"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.67CQ77V27R/com.colliderli.iina",
+      "remote-domains": "streamgate.nl",
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

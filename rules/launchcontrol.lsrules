@@ -1,0 +1,27 @@
+{
+  "name": "LaunchControl",
+  "description": "Rules for LaunchControl - The launchd GUI.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/LaunchControl.app/Contents/MacOS/LaunchControl",
+      "remote-domains": "soma-zone.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H665B6EEXC/com.soma-zone.LaunchControl",
+      "remote-hosts": "www.soma-zone.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H665B6EEXC/com.soma-zone.LaunchControl",
+      "remote-hosts": "www.soma-zone.com",
+      "protocol": "udp",
+      "ports": "443"
+    }
+  ]
+}

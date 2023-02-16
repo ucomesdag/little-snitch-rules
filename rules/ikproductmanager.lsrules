@@ -1,0 +1,29 @@
+{
+  "name": "IK Product Manager",
+  "description": "Rules for IK Product Manager - Manage IK Multimedia products",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/IK Product Manager.app/Contents/MacOS/IK Product Manager",
+      "remote-domains": [
+        "googleapis.com",
+        "ikmultimedia.com",
+        "typekit.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.S78FW55573/com.ikmultimedia.productmanager",
+      "remote": "any"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/IK Product Manager.app/Contents/MacOS/IK Product Manager",
+      "remote-domains": "gstatic.com",
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Ivory for Mastodon",
+  "description": "Rules for Ivory for Mastodon - Mastodon client for browsing timelines, posting, and interacting with the fediverse.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Ivory.app/Contents/MacOS/Ivory",
+      "remote-domains": [
+        "fosstodon.org",
+        "mastodon.social"
+      ],
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Ivory.app/Contents/PlugIns/Notification Service Extension.appex/Contents/MacOS/Notification Service Extension",
+      "remote-domains": [
+        "fosstodon.org",
+        "mastodon.social"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.9JTH7AWHE6/com.tapbots.Ivory",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.9JTH7AWHE6/com.tapbots.Ivory.widgetextension",
+      "remote-hosts": "fosstodon.org",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.9JTH7AWHE6/com.tapbots.Ivory.widgetextension",
+      "remote-hosts": [
+        "cdn.fosstodon.org",
+        "fosstodon.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "iMazing",
+  "description": "Rules for iMazing - iPhone, iPad & iPod Manager for Mac",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini",
+      "remote-domains": "imazing.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing Mini.app/Contents/MacOS/iMazing Mini",
+      "remote-domains": [
+        "appcenter.ms",
+        "imazing.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing",
+      "remote-domains": "imazing.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iMazing.app/Contents/MacOS/iMazing",
+      "remote-domains": [
+        "appcenter.ms",
+        "imazing.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing2Mac.Mini",
+      "remote-hosts": "www.baidu.com",
+      "protocol": "tcp",
+      "ports": "80"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing2Mac.Mini",
+      "remote-hosts": [
+        "api.imazing.com",
+        "downloads.imazing.com",
+        "www.google.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing3Mac",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing3Mac",
+      "remote-hosts": "imazing.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.J5PR93692Y/com.DigiDNA.iMazing3Mac",
+      "remote-hosts": [
+        "static1.squarespace.com",
+        "suivi.chronopost.fr",
+        "www.amazon.co.uk",
+        "xn--matriel-dya.net"
+      ],
+      "protocol": "tcp",
+      "ports": "80"
+    }
+  ]
+}

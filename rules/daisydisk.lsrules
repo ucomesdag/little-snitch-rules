@@ -1,0 +1,13 @@
+{
+  "name": "DaisyDisk",
+  "description": "Rules for DaisyDisk - DaisyDisk is a disk space analyzer for macOS.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/DaisyDisk.app/Contents/MacOS/DaisyDisk",
+      "remote-domains": "daisydiskapp.com",
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

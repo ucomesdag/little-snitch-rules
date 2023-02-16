@@ -1,0 +1,49 @@
+{
+  "name": "goodnotes",
+  "description": "Rules for GoodNotes - Best Note-Taking App for iPad.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/GoodNotes.app/Contents/MacOS/GoodNotes",
+      "remote-domains": [
+        "app-measurement.com",
+        "appcenter.ms",
+        "browser-intake-datadoghq.com",
+        "crashlytics.com",
+        "goodnotes.email",
+        "goodnotescloud.com",
+        "goodnotesplatform.com",
+        "googleapis.com",
+        "mixpanel.com",
+        "pndsn.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/GoodNotes.app/Contents/MacOS/GoodNotes",
+      "remote-domains": [
+        "app-measurement.com",
+        "ntp.org"
+      ],
+      "protocol": "udp",
+      "ports": "123"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/GoodNotes.app/Contents/MacOS/GoodNotes",
+      "remote-domains": [
+        "crashlytics.com",
+        "googleapis.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.C88F57F4TJ/com.goodnotesapp.x",
+      "remote": "any"
+    }
+  ]
+}

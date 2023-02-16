@@ -1,0 +1,29 @@
+{
+  "name": "Karabiner-Elements",
+  "description": "Rules for Karabiner-Elements - A powerful and stable keyboard customizer for macOS.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements",
+      "remote-domains": "pqrs.org",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.G43BCU2T37/org.pqrs.Karabiner-Elements.Settings",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.G43BCU2T37/org.pqrs.Karabiner-Updater",
+      "remote-hosts": [
+        "appcast.pqrs.org",
+        "github.com",
+        "release-assets.githubusercontent.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

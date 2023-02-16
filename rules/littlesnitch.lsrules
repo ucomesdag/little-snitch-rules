@@ -1,0 +1,30 @@
+{
+  "name": "Little Snitch",
+  "description": "Rules for Little Snitch - Little Snitch makes these Internet connections visible and puts you back in control!",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Little Snitch.app/Contents/Components/Little Snitch Software Update.app/Contents/MacOS/Little Snitch Software Update",
+      "remote-domains": "obdev.at",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.MLZF7K7B5R/at.obdev.MicroSnitch",
+      "remote-domains": "obdev.at",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking",
+      "remote": "any"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "iStat Menus",
+  "description": "Rules for iStat Menus - An advanced Mac system monitor for your menubar.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iStat Menus.app/Contents/MacOS/iStat Menus",
+      "remote-domains": "paddle.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote": "bpf"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-hosts": [
+        "api.checkout.com",
+        "authentication-devices.checkout.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "global.localizecdn.com",
+        "m.stripe.network",
+        "v3.paddleapi.com",
+        "www.rsa3dsauth.co.uk",
+        "www.securesuite.co.uk"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-hosts": [
+        "fonts.gstatic.com",
+        "global.localizecdn.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-domains": "cloudflare.com",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus",
+      "remote-domains": [
+        "istatmenus.app",
+        "paddle.com",
+        "paddle.s3.amazonaws.com",
+        "sentry.io",
+        "stripe.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.agent",
+      "remote-hosts": "updates.istatmenus.app",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.status",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.Y93TK974AT/com.bjango.istatmenus.updater",
+      "remote": "any"
+    }
+  ]
+}

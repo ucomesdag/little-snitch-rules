@@ -1,0 +1,13 @@
+{
+  "name": "Trezor Suite",
+  "description": "Rules for Trezor Suite - Desktop & browser app for Trezor hardware wallets.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Trezor Suite.app/Contents/MacOS/Trezor Suite",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443,1234,9001"
+    }
+  ]
+}

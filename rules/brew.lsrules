@@ -1,0 +1,13 @@
+{
+  "name": "Brew",
+  "description": "Rules for Homebrew - The Missing Package Manager for macOS.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/usr/bin/curl",
+      "remote-domains": "brew.sh",
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

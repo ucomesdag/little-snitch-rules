@@ -1,0 +1,36 @@
+{
+  "name": "pacifist",
+  "description": "Rules for Pacifist - Pacifist is a powerful multi-tool for working with macOS package files, disk images, and file archives.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/Pacifist.app/Contents/MacOS/Pacifist",
+      "remote-domains": "charlessoft.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HRLUCP7QP4/com.charlessoft.pacifist",
+      "remote-hosts": "x.klarnacdn.net",
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.HRLUCP7QP4/com.charlessoft.pacifist",
+      "remote-hosts": [
+        "cdn.onfastspring.com",
+        "charlessoft.onfastspring.com",
+        "d1f8f9xcsvx3ha.cloudfront.net",
+        "d2kl989519khzp.cloudfront.net",
+        "d8y8nchqlnmka.cloudfront.net",
+        "fastspringresources.com",
+        "www.charlessoft.com",
+        "x.klarnacdn.net"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "name": "iTerm2",
+  "description": "Rules for iTerm2 - macOS Terminal Replacement.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "local-net",
+      "direction": "incoming"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "via": "path.opt/homebrew/Cellar/wget/*/bin/wget"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443,8080",
+      "via": "path.opt/homebrew/Cellar/speedtest/*/bin/speedtest"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443",
+      "via": "path.opt/homebrew/Cellar/kubernetes-cli/*/bin/kubectl"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443",
+      "via": "path.opt/homebrew/Cellar/openshift-cli/*/bin/oc"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "6443,8090",
+      "via": "~/.local/bin/openshift-install"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "123",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "8080",
+      "via": "path.opt/homebrew/Cellar/speedtest/*/bin/speedtest"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote": "bpf",
+      "via": "path.opt/homebrew/Cellar/nmap/*/bin/nmap"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git-lfs/*/bin/git-lfs"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "github.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/git/*/libexec/git-core/git-remote-http"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "mirror.openshift.com",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "quay.io",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/bin/podman-remote"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": "registry.opentofu.org",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/opentofu/*/bin/tofu"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": [
+        "dl.google.com",
+        "go.dev",
+        "golang.org",
+        "proxy.golang.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/go/*/libexec/bin/go"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": [
+        "files.pythonhosted.org",
+        "pypi.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "~/.pyenv/versions/3.13.11/bin/python3.13"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-hosts": [
+        "files.pythonhosted.org",
+        "pypi.org"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "~/.pyenv/versions/3.14.2/bin/python3.14"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-domains": "quay.io",
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/openshift-cli/*/bin/oc"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.H7V7XYVQ7D/com.googlecode.iterm2",
+      "remote-domains": [
+        "docker.com",
+        "docker.io",
+        "redhat.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443",
+      "via": "path.opt/homebrew/Cellar/podman/*/libexec/podman/gvproxy"
+    }
+  ]
+}

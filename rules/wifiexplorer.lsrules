@@ -1,0 +1,52 @@
+{
+  "name": "WiFi Explorer",
+  "description": "Rules for WiFi Explorer - Wi-Fi Scanner and Analyzer for Mac.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/WiFi Explorer.app/Contents/MacOS/WiFi Explorer",
+      "remote-domains": "s3.amazonaws.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/com.adriangranados.Transfer",
+      "remote-hosts": [
+        "buy.paddle.com",
+        "cdn.paddle.com",
+        "checkout.paddle.com",
+        "fonts.googleapis.com",
+        "js.stripe.com",
+        "ld.paddle.com",
+        "v3.paddleapi.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/com.adriangranados.Transfer",
+      "remote-hosts": [
+        "cdnjs.cloudflare.com",
+        "fonts.gstatic.com",
+        "global.localizecdn.com",
+        "www.intuitibits.com"
+      ],
+      "protocol": "udp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/com.adriangranados.Transfer",
+      "remote-domains": "paddle.s3.amazonaws.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.2B9R362QNU/wifiexplorer",
+      "remote": "any"
+    }
+  ]
+}

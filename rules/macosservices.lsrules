@@ -1,0 +1,85 @@
+{
+  "name": "MacOS Services",
+  "description": "Rules for MacOS Services - Services part of MacOS",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/System/Library/CoreServices/destinationd",
+      "remote-domains": "apple.news",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.Networking.xpc/Contents/MacOS/com.apple.WebKit.Networking",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "80,443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/Support/AMPDevicesAgent",
+      "remote-domains": "itunes.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+      "remote-domains": [
+        "amazonaws.com",
+        "googleapis.com"
+      ],
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/DataAccess.framework/Support/dataaccessd",
+      "remote": "any",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+      "remote-domains": "apple-mapkit.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/NewsDaemon.framework/newsd",
+      "remote-domains": "apple.news",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/System/Library/PrivateFrameworks/PassKitCore.framework/passd",
+      "remote-domains": "mastercard.com",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/libexec/nehelper",
+      "remote-domains": "edge.apple",
+      "protocol": "tcp",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/libexec/nsurlsessiond",
+      "remote": "any",
+      "ports": "443"
+    },
+    {
+      "action": "allow",
+      "process": "/usr/sbin/netbiosd",
+      "remote": "any",
+      "protocol": "udp",
+      "ports": "137-138"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "WireGuard",
+  "description": "Rules for WireGuard - A fast, modern, secure VPN tunnel.",
+  "rules": [
+    {
+      "action": "allow",
+      "process": "/Applications/WireGuard.app/Contents/PlugIns/WireGuardNetworkExtension.appex/Contents/MacOS/WireGuardNetworkExtension",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "identifier.L82V4Y2P3C/com.wireguard.macos.network-extension",
+      "remote-addresses": [
+        "87.212.167.21"
+      ],
+      "protocol": "udp",
+      "ports": "54772",
+      "direction": "incoming"
+    }
+  ]
+}
