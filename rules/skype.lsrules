@@ -1,0 +1,42 @@
+{
+  "description": "Rules based on Skype FAQ at https://support.skype.com/en/faq/FA148/which-ports-need-to-be-open-to-use-skype-on-desktop",
+  "name": "Skype",
+  "rules": [
+    {
+      "action" : "allow",
+      "process" : "\/Users\/uco\/Applications\/Brew\/Skype.app\/Contents\/MacOS\/Skype",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "skype.com,skypeassets.com",
+        "microsoft.com",
+        "office.com",
+        "bing.com",
+        "cloudapp.net",
+        "live.com",
+        "azureedge.net",
+        "msedge.net",
+        "l-msedge.net",
+        "s-dc-msedge.net",
+        "msftauth.net",
+        "msftconnecttest.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "direction" : "incoming",
+      "process" : "\/Users\/uco\/Applications\/Brew\/Skype.app\/Contents\/MacOS\/Skype",
+      "ports": "1000-10000,50000-65000,16000-26000",
+      "protocol": "tcp"
+      "remote" : "any"
+    },
+    {
+      "action": "allow",
+      "direction" : "incoming",
+      "process" : "\/Users\/uco\/Applications\/Brew\/Skype.app\/Contents\/MacOS\/Skype",
+      "ports": "3478-3481,50000-65000",
+      "protocol": "udp"
+      "remote" : "any"
+    }
+  ]
+}
