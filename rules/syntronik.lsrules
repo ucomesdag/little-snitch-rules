@@ -1,0 +1,15 @@
+{
+  "name" : "Syntronik",
+  "description" : "Rules for Syntronik - Vintage virtual synthesizers.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/Syntronik 2.app/Contents/MacOS/Syntronik 2",
+      "remote-domains" : [
+        "ikmultimedia.com"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    }
+  ]
+}

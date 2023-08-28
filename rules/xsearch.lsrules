@@ -8,8 +8,8 @@
       "remote-domains" : [
         "gstatic.com"
       ],
-      "protocol" : "tcp",
-      "ports" : "443"
+      "ports" : "443",
+      "protocol" : "tcp"
     },
     {
       "action" : "deny",
@@ -17,8 +17,8 @@
       "remote-domains" : [
         "google.com"
       ],
-      "protocol" : "udp",
-      "ports" : "443"
+      "ports" : "443",
+      "protocol" : "udp"
 
     },
     {

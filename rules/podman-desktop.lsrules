@@ -16,7 +16,7 @@
       "action": "allow",
       "process": "any",
       "remote": "any",
-      "via": "/usr/local/Cellar/podman/4.4.2/libexec/podman/gvproxy"
+      "via": "/usr/local/Cellar/podman/4.6.1/libexec/podman/gvproxy"
     }
   ]
 }

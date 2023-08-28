@@ -1,0 +1,25 @@
+{
+  "name" : "Tonex",
+  "description" : "Rules for Tonex - AI Machine Modeled tone creator, player, browser.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/TONEX.app/Contents/MacOS/TONEX",
+      "remote-domains" : [
+        "ikmultimedia.com",
+        "google.com"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Applications/TONEX.app/Contents/MacOS/TONEX",
+      "remote-domains" : [
+        "google.com"
+      ],
+      "ports" : "443",
+      "protocol" : "udp"
+    }
+  ]
+}

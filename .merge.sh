@@ -2,6 +2,11 @@
 
 basedir="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
+bash $basedir/.fix.sh
+
+echo "Merge all \"lsrules\" files into \"all.lsrules\""
+echo "----------------------------------------------------------------------------"
+
 for file in $(ls $basedir/rules/*.lsrules); do
   sed -i -e 's|\\/|/|g' $file
   python -mjson.tool $file > /dev/null || ( echo "[${file##*/}]"; exit 1 )

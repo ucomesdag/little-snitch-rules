@@ -1,0 +1,16 @@
+{
+  "name" : "T-RackS",
+  "description" : "Rules for T-RackS - The ultimate mix and mastering workstation from the creator of the first desktop mastering software.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Applications/T-RackS 5.app/Contents/MacOS/T-RackS 5",
+      "remote-domains" : [
+        "ikmultimedia.com",
+        "ikstore.com"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    }
+  ]
+}

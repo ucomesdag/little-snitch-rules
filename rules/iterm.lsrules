@@ -5,7 +5,8 @@
     {
       "action": "allow",
       "process": "/Users/uco/Applications/Brew/iTerm.app/Contents/MacOS/iTerm2",
-      "remote": "any"
+      "remote": "any",
+      "via" : "any"
     },
     {
       "action" : "allow",
@@ -13,14 +14,20 @@
       "remote" : "any",
       "ports" : "443",
       "protocol" : "tcp",
-      "via" : "/usr/local/Cellar/git/2.39.2/libexec/git-core/git-remote-http"
+      "via" : "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
     },
     {
       "action" : "allow",
-      "process" : "/usr/local/Cellar/git/2.39.2/libexec/git-core/git-remote-http",
+      "process" : "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http",
       "remote-domains" : "any",
       "ports" : "443",
       "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "process" : "/Users/uco/Applications/Brew/iTerm.app/Contents/MacOS/iTerm2",
+      "remote" : "local-net"
     }
   ]
 }

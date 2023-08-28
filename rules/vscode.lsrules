@@ -3,87 +3,25 @@
   "description": "Rules for Visual Studio Code - Code Editing. Redefined.",
   "rules": [
     {
+      "action" : "allow",
+      "direction" : "incoming",
+      "ports" : "55222,57194",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
       "action": "allow",
       "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
       "remote": "any"
     },
     {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "local-net",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "direction": "incoming",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "local-net",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "direction": "incoming",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "53,63913",
-      "protocol": "udp",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/bridge/dsc"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/usr/local/Cellar/git/2.39.2/libexec/git-core/git-remote-http"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/kubectl/osx/kubectl"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "53",
-      "protocol": "udp",
-      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/kubectl/osx/kubectl"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "53",
-      "protocol": "udp",
-      "via": "/Users/uco/.vs-kubernetes/tools/kubectl/kubectl"
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "protocol": "tcp",
-      "remote": "any",
-      "via": "/Users/uco/.vs-kubernetes/tools/kubectl/kubectl"
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "protocol" : "tcp",
+      "remote" : "any",
+      "via" : "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python"
     },
     {
       "action": "allow",
@@ -92,6 +30,96 @@
       "ports": "443",
       "protocol": "tcp",
       "via": "/Users/uco/.pyenv/versions/3.10.9/bin/python3.10"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/Users/uco/.pyenv/versions/3.11.4/bin/python3.11"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/Users/uco/.pyenv/versions/3.11.4/bin/python3.11"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote-domains" : [
+        "ntp.org"
+      ],
+      "ports" : "123",
+      "protocol" : "udp",
+      "via" : "/opt/homebrew/Cellar/podman/4.6.1/libexec/podman/gvproxy"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/podman/4.6.1/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/wget/1.21.4/bin/wget"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/podman/4.6.1/bin/podman-remote"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/minikube/1.31.2/bin/minikube"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "6443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/tektoncd-cli/0.31.2/bin/tkn"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "6443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/kubernetes-cli/1.28.1/bin/kubectl"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote" : "any",
+      "ports" : "6443",
+      "protocol" : "tcp",
+      "via" : "/opt/homebrew/Cellar/openshift-cli/4.13.9/bin/oc"
     }
   ]
 }

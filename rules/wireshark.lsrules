@@ -1,0 +1,29 @@
+{
+  "name" : "Wireshark",
+  "description" : "Rules for Wireshark - Free, open-source network protocol analyzer.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Wireshark.app/Contents/MacOS/Wireshark",
+      "remote-domains" : [
+        "wireshark.org"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Wireshark.app/Contents/MacOS/Wireshark",
+      "remote-domains" : [
+        "wireshark.org"
+      ],
+      "ports" : "443",
+      "protocol" : "udp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Wireshark.app/Contents/MacOS/Wireshark",
+      "remote" : "bpf"
+    }
+  ]
+}

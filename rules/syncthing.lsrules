@@ -1,0 +1,11 @@
+{
+  "name" : "Syncthing",
+  "description" : "Rules for Syncthing - Syncthing is a continuous file synchronization program.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Syncthing.app/Contents/MacOS/Syncthing",
+      "remote" : "any"
+    }
+  ]
+}

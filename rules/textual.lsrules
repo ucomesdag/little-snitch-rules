@@ -13,7 +13,7 @@
       "action": "allow",
       "process": "/Applications/Textual 7.app/Contents/MacOS/Textual 7",
       "remote": "any",
-      "ports": "443",
+      "ports": "80,443",
       "protocol": "tcp"
     },
     {

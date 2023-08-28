@@ -1,0 +1,21 @@
+{
+  "name" : "Jellyfin Media Player",
+  "description" : "Rules for Jellyfin Media Player",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Jellyfin Media Player.app/Contents/MacOS/Jellyfin Media Player",
+      "remote-domains" : [
+        "github.com"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Jellyfin Media Player.app/Contents/MacOS/Jellyfin Media Player",
+      "ports" : "8920,8096",
+      "protocol" : "tcp"
+    }
+  ]
+}

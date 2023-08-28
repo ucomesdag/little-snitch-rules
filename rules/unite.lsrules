@@ -1,0 +1,13 @@
+{
+  "name" : "Unite",
+  "description" : "Rules for Unite - Unite allows you to turn any website into a deeply customizable app.",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/Unite.app/Contents/MacOS/Unite",
+      "ports" : "443",
+      "remote" : "any",
+      "protocol" : "tcp"
+    }
+  ]
+}

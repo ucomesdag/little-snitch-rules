@@ -57,7 +57,7 @@
       ],
       "ports": "443",
       "protocol": "tcp",
-      "via": "/usr/local/Cellar/git/2.41.0_2/libexec/git-core/git-remote-http"
+      "via": "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
     },
     {
       "action": "allow",

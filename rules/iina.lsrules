@@ -1,0 +1,25 @@
+{
+  "name" : "IINA",
+  "description" : "Rules for IINA - The modern media player for macOS",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/IINA.app/Contents/MacOS/IINA",
+      "remote-domains" : [
+        "iina.io",
+        "youtube.com"
+      ],
+      "ports" : "443",
+      "protocol" : "tcp"
+    },
+    {
+      "action" : "allow",
+      "process" : "/Users/uco/Applications/Brew/IINA.app/Contents/MacOS/IINA",
+      "remote-domains" : [
+        "iina.io"
+      ],
+      "ports" : "443",
+      "protocol" : "udp"
+    }
+  ]
+}

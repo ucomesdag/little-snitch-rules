@@ -167,7 +167,7 @@
       ],
       "ports": "443",
       "protocol": "tcp",
-      "via": "/usr/local/Cellar/git/2.41.0_2/libexec/git-core/git-remote-http"
+      "via": "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
     },
     {
       "action": "allow",
@@ -285,7 +285,7 @@
       "ports": "443",
       "protocol": "tcp",
       "remote-domains": "github.com",
-      "via": "/usr/local/Cellar/git/2.41.0_2/libexec/git-core/git-remote-http"
+      "via": "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
     },
     {
       "action": "allow",
@@ -800,6 +800,43 @@
     },
     {
       "action": "allow",
+      "process": "/Users/uco/Applications/Brew/IINA.app/Contents/MacOS/IINA",
+      "remote-domains": [
+        "iina.io",
+        "youtube.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/IINA.app/Contents/MacOS/IINA",
+      "remote-domains": [
+        "iina.io"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/IK Product Manager.app/Contents/MacOS/IK Product Manager",
+      "remote-domains": [
+        "googleapis.com",
+        "ikmultimedia.com",
+        "typekit.net"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "deny",
+      "process": "/Applications/IK Product Manager.app/Contents/MacOS/IK Product Manager",
+      "remote-domains": "gstatic.com",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
       "process": "/Users/uco/Applications/Brew/ImageOptim.app/Contents/MacOS/ImageOptim",
       "remote-domains": [
         "imageoptim.com"
@@ -880,7 +917,8 @@
     {
       "action": "allow",
       "process": "/Users/uco/Applications/Brew/iTerm.app/Contents/MacOS/iTerm2",
-      "remote": "any"
+      "remote": "any",
+      "via": "any"
     },
     {
       "action": "allow",
@@ -888,14 +926,20 @@
       "remote": "any",
       "ports": "443",
       "protocol": "tcp",
-      "via": "/usr/local/Cellar/git/2.39.2/libexec/git-core/git-remote-http"
+      "via": "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
     },
     {
       "action": "allow",
-      "process": "/usr/local/Cellar/git/2.39.2/libexec/git-core/git-remote-http",
+      "process": "/usr/local/Cellar/git/2.42.0/libexec/git-core/git-remote-http",
       "remote-domains": "any",
       "ports": "443",
       "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Users/uco/Applications/Brew/iTerm.app/Contents/MacOS/iTerm2",
+      "remote": "local-net"
     },
     {
       "action": "allow",
@@ -951,6 +995,21 @@
     },
     {
       "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Jellyfin Media Player.app/Contents/MacOS/Jellyfin Media Player",
+      "remote-domains": [
+        "github.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Jellyfin Media Player.app/Contents/MacOS/Jellyfin Media Player",
+      "ports": "8920,8096",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
       "process": "/Users/uco/Applications/Brew/Kaleidoscope.app/Contents/MacOS/Kaleidoscope",
       "remote-domains": [
         "appcenter.ms",
@@ -974,6 +1033,72 @@
       "remote-domains": [
         "soma-zone.com"
       ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "process": "/Users/uco/Applications/Brew/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote-domains": [
+        "ledger.app"
+      ],
+      "ports": "80",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote-domains": [
+        "fontawesome.com",
+        "google.com",
+        "googleapis.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "lido.fi",
+        "paraswap.io",
+        "ramp.network",
+        "youhodler.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "ports": "19302",
+      "process": "/Users/uco/Applications/Brew/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "protocol": "udp",
+      "remote-domains": "google.com"
+    },
+    {
+      "action": "deny",
+      "process": "/Users/uco/Applications/Brew/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote-domains": [
+        "googletagmanager.com",
+        "gstatic.com",
+        "sentry.io"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Ledger Extension.app/Contents/PlugIns/LedgerConnect Extension.appex/Contents/MacOS/LedgerConnect Extension",
+      "remote-domains": [
+        "sentry.io"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Ledger Live.app/Contents/MacOS/Ledger Live",
+      "remote": "any",
       "ports": "443",
       "protocol": "tcp"
     },
@@ -1325,11 +1450,22 @@
       "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
       "remote-domains": [
         "akamaized.net",
+        "amazonaws.com",
+        "brightcove.com",
+        "cloudfront.net",
         "contentdirect.tv",
+        "engage.app",
         "f1mv.com",
         "formula1.com",
         "googleapis.com",
-        "multiviewer.app"
+        "googleapis.com",
+        "gvt1.com",
+        "multiviewer.app",
+        "multiviewer.dev",
+        "opin.media",
+        "paypal.com",
+        "talkative-cdn.com",
+        "trustarc.com"
       ],
       "ports": "443",
       "protocol": "tcp"
@@ -1339,7 +1475,7 @@
       "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
       "remote-domains": [
         "formula1.com",
-        "eu-west-2.amazonaws.com",
+        "amazonaws.com",
         "edigitalsurvey.com",
         "engage.app",
         "evgnet.com",
@@ -1366,10 +1502,17 @@
       "remote-domains": [
         "facebook.com",
         "facebook.net",
-        "googletagmanager.com"
+        "googletagmanager.com",
+        "gstatic.com"
       ],
       "ports": "443",
-      "protocol": "tcp"
+      "protocol": "any"
+    },
+    {
+      "action": "deny",
+      "direction": "incoming",
+      "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote": "any"
     },
     {
       "action": "allow",
@@ -1500,11 +1643,11 @@
       "action": "allow",
       "process": "any",
       "remote": "any",
-      "via": "/usr/local/Cellar/podman/4.4.2/libexec/podman/gvproxy"
+      "via": "/usr/local/Cellar/podman/4.6.1/libexec/podman/gvproxy"
     },
     {
       "action": "allow",
-      "process": "/usr/local/Cellar/python@3.11/3.11.4_1/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
+      "process": "/usr/local/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
       "remote-domains": [
         "me.com"
       ],
@@ -1862,6 +2005,30 @@
     },
     {
       "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Syncthing.app/Contents/MacOS/Syncthing",
+      "remote": "any"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/Syntronik 2.app/Contents/MacOS/Syntronik 2",
+      "remote-domains": [
+        "ikmultimedia.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/T-RackS 5.app/Contents/MacOS/T-RackS 5",
+      "remote-domains": [
+        "ikmultimedia.com",
+        "ikstore.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
       "process": "/Applications/Textual 7.app/Contents/MacOS/Textual 7",
       "remote": "any",
       "ports": "6660–6669,6697,7000",
@@ -1871,7 +2038,7 @@
       "action": "allow",
       "process": "/Applications/Textual 7.app/Contents/MacOS/Textual 7",
       "remote": "any",
-      "ports": "443",
+      "ports": "80,443",
       "protocol": "tcp"
     },
     {
@@ -1880,6 +2047,53 @@
       "remote": "any",
       "ports": "443",
       "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/TONEX.app/Contents/MacOS/TONEX",
+      "remote-domains": [
+        "ikmultimedia.com",
+        "google.com"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Applications/TONEX.app/Contents/MacOS/TONEX",
+      "remote-domains": [
+        "google.com"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Transmission.app/Contents/MacOS/Transmission",
+      "remote": "any",
+      "ports": "1900",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Trezor Suite.app/Contents/MacOS/Trezor Suite",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Trezor Suite.app/Contents/MacOS/Trezor Suite",
+      "remote": "any",
+      "ports": "1234,9001",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Unite.app/Contents/MacOS/Unite",
+      "ports": "443",
+      "remote": "any",
+      "protocol": "tcp"
     },
     {
       "action": "allow",
@@ -1991,7 +2205,10 @@
     },
     {
       "action": "allow",
-      "process": "/Applications/VMware Fusion.app/Contents/MacOS/VMware Fusion",
+      "direction": "incoming",
+      "ports": "55222,57194",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "protocol": "udp",
       "remote": "any"
     },
     {
@@ -2001,81 +2218,11 @@
     },
     {
       "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "local-net",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "direction": "incoming",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "local-net",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "direction": "incoming",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "53,63913",
-      "protocol": "udp",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/Users/uco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/bridge/dsc"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/usr/local/Cellar/git/2.39.2/libexec/git-core/git-remote-http"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "443",
-      "protocol": "tcp",
-      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/kubectl/osx/kubectl"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "53",
-      "protocol": "udp",
-      "via": "/Users/uco/Library/Application Support/Code/User/globalStorage/mindaro.mindaro/file-downloader-downloads/kubectl/osx/kubectl"
-    },
-    {
-      "action": "allow",
-      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
-      "remote": "any",
-      "ports": "53",
-      "protocol": "udp",
-      "via": "/Users/uco/.vs-kubernetes/tools/kubectl/kubectl"
-    },
-    {
-      "action": "allow",
       "ports": "443",
       "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
       "protocol": "tcp",
       "remote": "any",
-      "via": "/Users/uco/.vs-kubernetes/tools/kubectl/kubectl"
+      "via": "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python"
     },
     {
       "action": "allow",
@@ -2084,6 +2231,96 @@
       "ports": "443",
       "protocol": "tcp",
       "via": "/Users/uco/.pyenv/versions/3.10.9/bin/python3.10"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/Users/uco/.pyenv/versions/3.11.4/bin/python3.11"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/Users/uco/.pyenv/versions/3.11.4/bin/python3.11"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote-domains": [
+        "ntp.org"
+      ],
+      "ports": "123",
+      "protocol": "udp",
+      "via": "/opt/homebrew/Cellar/podman/4.6.1/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/podman/4.6.1/libexec/podman/gvproxy"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/git/2.42.0/libexec/git-core/git-remote-http"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/wget/1.21.4/bin/wget"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/podman/4.6.1/bin/podman-remote"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/minikube/1.31.2/bin/minikube"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "6443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/tektoncd-cli/0.31.2/bin/tkn"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "6443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/kubernetes-cli/1.28.1/bin/kubectl"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Visual Studio Code.app/Contents/MacOS/Electron",
+      "remote": "any",
+      "ports": "6443",
+      "protocol": "tcp",
+      "via": "/opt/homebrew/Cellar/openshift-cli/4.13.9/bin/oc"
     },
     {
       "action": "allow",
@@ -2118,13 +2355,36 @@
       "remote": "any"
     },
     {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Wireshark.app/Contents/MacOS/Wireshark",
+      "remote-domains": [
+        "wireshark.org"
+      ],
+      "ports": "443",
+      "protocol": "tcp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Wireshark.app/Contents/MacOS/Wireshark",
+      "remote-domains": [
+        "wireshark.org"
+      ],
+      "ports": "443",
+      "protocol": "udp"
+    },
+    {
+      "action": "allow",
+      "process": "/Users/uco/Applications/Brew/Wireshark.app/Contents/MacOS/Wireshark",
+      "remote": "bpf"
+    },
+    {
       "action": "deny",
       "process": "/Applications/xSearch.app/Contents/MacOS/xSearch",
       "remote-domains": [
         "gstatic.com"
       ],
-      "protocol": "tcp",
-      "ports": "443"
+      "ports": "443",
+      "protocol": "tcp"
     },
     {
       "action": "deny",
@@ -2132,8 +2392,8 @@
       "remote-domains": [
         "google.com"
       ],
-      "protocol": "udp",
-      "ports": "443"
+      "ports": "443",
+      "protocol": "udp"
     },
     {
       "action": "allow",

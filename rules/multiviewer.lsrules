@@ -7,11 +7,22 @@
       "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
       "remote-domains": [
         "akamaized.net",
+        "amazonaws.com",
+        "brightcove.com",
+        "cloudfront.net",
         "contentdirect.tv",
+        "engage.app",
         "f1mv.com",
         "formula1.com",
         "googleapis.com",
-        "multiviewer.app"
+        "googleapis.com",
+        "gvt1.com",
+        "multiviewer.app",
+        "multiviewer.dev",
+        "opin.media",
+        "paypal.com",
+        "talkative-cdn.com",
+        "trustarc.com"
       ],
       "ports": "443",
       "protocol": "tcp"
@@ -21,7 +32,7 @@
       "process": "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
       "remote-domains": [
         "formula1.com",
-        "eu-west-2.amazonaws.com",
+        "amazonaws.com",
         "edigitalsurvey.com",
         "engage.app",
         "evgnet.com",
@@ -48,10 +59,17 @@
       "remote-domains": [
         "facebook.com",
         "facebook.net",
-        "googletagmanager.com"
+        "googletagmanager.com",
+        "gstatic.com"
       ],
       "ports": "443",
-      "protocol": "tcp"
+      "protocol": "any"
+    },
+    {
+      "action" : "deny",
+      "direction" : "incoming",
+      "process" : "/Users/uco/Applications/MultiViewer for F1.app/Contents/MacOS/MultiViewer for F1",
+      "remote" : "any"
     }
   ]
 }
